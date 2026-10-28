@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AP Macroeconomics Unit 4 study guide: Financial sector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7FA;--paper:#FFFFFF;--ink:#16213A;--ink2:#4A5672;--ink3:#6B7690;--line:#DCE2EC;--grid:#EBEFF5;
+  --ad:#2563C9;--sr:#D24B2A;--lr:#16213A;--pt:#16213A;
+  --hl:#FFE27A;--hl-ink:#3A2F00;--good:#1D7547;--good-bg:#E2F3E9;--bad:#B3261E;--bad-bg:#FBE8E6;
+  --tip-bg:#EAF1FD;--tip-line:#2563C9;--book:#6B47B8;--book-bg:#F3EFFB;--trap-bg:#FFF4E0;--trap-line:#C77700;
+  --serif:"Literata",Georgia,"Times New Roman",serif;--sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1420;--paper:#151D2C;--ink:#E6EBF4;--ink2:#AEB8CB;--ink3:#8692A8;--line:#28334A;--grid:#1B2435;
+  --ad:#74A4FF;--sr:#FF8763;--lr:#E6EBF4;--pt:#E6EBF4;
+  --hl:#544410;--hl-ink:#FFE9A6;--good:#72D29E;--good-bg:#163124;--bad:#FF8F85;--bad-bg:#3A1C1A;
+  --tip-bg:#17244A;--tip-line:#74A4FF;--book:#B9A2FF;--book-bg:#1F1A33;--trap-bg:#33260E;--trap-line:#F2B44A;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1420;--paper:#151D2C;--ink:#E6EBF4;--ink2:#AEB8CB;--ink3:#8692A8;--line:#28334A;--grid:#1B2435;
+  --ad:#74A4FF;--sr:#FF8763;--lr:#E6EBF4;--pt:#E6EBF4;
+  --hl:#544410;--hl-ink:#FFE9A6;--good:#72D29E;--good-bg:#163124;--bad:#FF8F85;--bad-bg:#3A1C1A;
+  --tip-bg:#17244A;--tip-line:#74A4FF;--book:#B9A2FF;--book-bg:#1F1A33;--trap-bg:#33260E;--trap-line:#F2B44A;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 16px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-text-size-adjust:100%}
+img,svg{max-width:100%}
+a{color:var(--ad)}
+:focus-visible{outline:2px solid var(--ad);outline-offset:2px}
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:48px;max-width:1160px;margin:0 auto;padding:0 24px}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:0;padding:0 16px}}
+/* sidebar */
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;padding:32px 0;max-height:100vh;overflow:auto}
+nav.toc h2{font-family:var(--sans);font-size:14px;font-weight:600;color:var(--ink3);margin:0 0 10px;letter-spacing:.01em}
+nav.toc ol{list-style:none;margin:0;padding:0}
+nav.toc li a{display:flex;gap:10px;align-items:baseline;padding:6px 8px;border-radius:6px;text-decoration:none;color:var(--ink2);font-size:14.5px;line-height:1.35}
+nav.toc li a:hover{background:var(--grid);color:var(--ink)}
+nav.toc li a .n{font-variant-numeric:tabular-nums;color:var(--ink3);min-width:28px;font-size:13px}
+nav.toc li a .ck{margin-left:auto;color:var(--good);font-size:13px;visibility:hidden}
+nav.toc li a.done .ck{visibility:visible}
+.progress{margin:18px 8px 0;font-size:13px;color:var(--ink3)}
+.bar{height:6px;border-radius:3px;background:var(--line);margin-top:6px;overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:var(--good);transition:width .3s}
+@media (max-width:900px){
+  nav.toc{position:static;max-height:none;padding:16px 0 0}
+  nav.toc ol{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px}
+  nav.toc li a{white-space:nowrap;border:1px solid var(--line);background:var(--paper)}
+  nav.toc li a .ck{margin-left:4px}
+}
+main{max-width:760px;padding:32px 0 96px;min-width:0}
+/* hero */
+.hero{padding:24px 0 8px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.hero .unit{font-size:15px;color:var(--ink3);margin:0 0 6px}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,6vw,52px);line-height:1.08;margin:0 0 16px;letter-spacing:-.01em}
+.hero p.lede{font-size:19px;color:var(--ink2);max-width:62ch;margin:0 0 20px}
+.hero-graph{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0 20px}
+.roadmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin:0 0 24px;padding:0;list-style:none}
+.roadmap li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px;line-height:1.45}
+.roadmap li b{display:block;font-weight:600;margin-bottom:2px}
+/* sections */
+section.mod{padding:40px 0 8px;border-bottom:1px solid var(--line)}
+section.mod>header .modnum{font-size:15px;color:var(--ink3);margin:0}
+section.mod h2{font-family:var(--serif);font-weight:600;font-size:clamp(26px,4vw,34px);line-height:1.15;margin:4px 0 14px}
+h3{font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.25;margin:34px 0 10px}
+h4{font-size:17px;font-weight:600;margin:22px 0 6px}
+p{margin:0 0 14px}
+.big{font-size:18.5px;color:var(--ink);border-left:4px solid var(--ad);padding:4px 0 4px 16px;margin:0 0 22px;font-family:var(--serif);line-height:1.6}
+dl.terms{margin:16px 0 20px}
+dl.terms dt{font-weight:600;font-size:17.5px;margin-top:20px;color:var(--ink)}
+dl.terms dd{margin:4px 0 0;color:var(--ink)}
+dl.terms dd .eg{display:block;margin-top:6px;color:var(--ink2);font-size:15.5px}
+ul,ol{padding-left:22px;margin:0 0 14px}
+li{margin:4px 0}
+mark{background:var(--hl);color:var(--hl-ink);padding:0 3px;border-radius:3px}
+.formula{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:18px 0}
+.formula .eq{font-family:var(--serif);font-size:21px;line-height:1.5;margin:4px 0}
+.formula .eq span.hlx{background:var(--hl);color:var(--hl-ink);padding:2px 8px;border-radius:5px}
+.formula .why{color:var(--ink2);font-size:15px;margin:6px 0 0}
+.callout{border-radius:0;padding:12px 16px;margin:18px 0;font-size:16px}
+.callout b.k{display:block;font-weight:600;margin-bottom:2px}
+.tip{background:var(--tip-bg);border-left:4px solid var(--tip-line)}
+.book{background:var(--book-bg);border-left:4px solid var(--book);border-radius:0 12px 12px 0;padding:18px 20px 6px;margin:30px 0}
+.book>.bh{font-size:13.5px;font-weight:600;color:var(--book);margin:0 0 2px}
+.book>h4:first-of-type{margin-top:6px}
+.book h4{font-family:var(--serif);font-size:19px}
+.book figure{background:var(--paper)}
+.aptip{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--book);padding:12px 16px;margin:16px 0;font-size:16px}
+.aptip b.k{display:block;font-weight:600;color:var(--book);margin-bottom:2px}
+.aptip p:last-child{margin:0}
+.book table{min-width:520px}
+.trap{background:var(--trap-bg);border-left:4px solid var(--trap-line)}
+.callout p:last-child{margin:0}
+figure{margin:22px 0;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 14px 10px}
+figure .graphs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+figure .gwrap .gt{font-size:14px;font-weight:600;text-align:center;margin:2px 0 0;color:var(--ink)}
+figcaption{font-size:14.5px;color:var(--ink2);margin-top:10px;line-height:1.5}
+.tablewrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:560px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;background:var(--grid)}
+tr:last-child td{border-bottom:0}
+td.up{color:var(--good);font-weight:600}td.down{color:var(--bad);font-weight:600}
+details.check{background:var(--paper);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0}
+details.check summary{cursor:pointer;padding:12px 16px;font-weight:500;list-style:none;display:flex;gap:10px}
+details.check summary::-webkit-details-marker{display:none}
+details.check summary::before{content:"+";font-weight:600;color:var(--ad);width:14px}
+details.check[open] summary::before{content:"−"}
+details.check .ans{padding:0 16px 14px 40px;color:var(--ink2)}
+.studied{margin:28px 0 24px;display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink2)}
+.studied button{font:inherit;font-size:15px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.studied button[aria-pressed="true"]{background:var(--good-bg);border-color:var(--good);color:var(--good)}
+/* widgets */
+.widget{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:22px 0}
+.widget h4{margin:0 0 4px;font-family:var(--serif);font-size:19px}
+.widget .sub{color:var(--ink2);font-size:15px;margin:0 0 14px}
+.ctl{display:grid;grid-template-columns:170px minmax(0,1fr) 64px;align-items:center;gap:12px;margin:8px 0}
+.ctl label{font-size:15px;color:var(--ink2)}
+.ctl output{font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:520px){.ctl{grid-template-columns:minmax(0,1fr) 56px}.ctl label{grid-column:1 / -1}}
+input[type=range]{width:100%;accent-color:var(--ad)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--grid);border-radius:10px;padding:10px 12px}
+.stat .l{font-size:13px;color:var(--ink2)}
+.stat .v{font-size:22px;font-weight:600;font-variant-numeric:tabular-nums}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.btn{font:inherit;font-size:14.5px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--ink3)}
+.btn.on{background:var(--tip-bg);border-color:var(--ad)}
+.status{background:var(--grid);border-radius:10px;padding:12px 14px;margin:10px 0;font-size:15.5px}
+.status .mini{display:block;font-size:14px;color:var(--ink2);margin-top:4px;font-variant-numeric:tabular-nums}
+/* quiz + sorter */
+.q{border-top:1px solid var(--line);padding:16px 0}
+.q:first-of-type{border-top:0}
+.q .prompt{font-weight:500;margin:0 0 10px}
+.opts{display:grid;gap:8px}
+.opt{font:inherit;font-size:15.5px;text-align:left;padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;line-height:1.4}
+.opt:hover:not(:disabled){border-color:var(--ink3)}
+.opt.right{background:var(--good-bg);border-color:var(--good);color:var(--good)}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.opt:disabled{cursor:default}
+.explain{margin:10px 0 0;font-size:15px;color:var(--ink2);display:none}
+.explain.show{display:block}
+.score{font-weight:600;font-variant-numeric:tabular-nums}
+.sortopts{display:flex;flex-wrap:wrap;gap:6px}
+.sortopts .opt{padding:7px 11px;font-size:14px}
+/* glossary */
+.search{width:100%;font:inherit;font-size:16px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);margin:6px 0 14px}
+.gl{display:grid;gap:8px}
+.gl .g{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.gl .g b{font-weight:600}
+.gl .g .m{font-size:13px;color:var(--ink3);margin-left:6px}
+.gl .g p{margin:2px 0 0;font-size:15.5px;color:var(--ink2)}
+.empty{color:var(--ink2);font-size:15px}
+footer{color:var(--ink3);font-size:14px;padding:32px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+svg text{font-family:var(--sans)}
+.gsvg{display:block;max-width:440px;margin:0 auto}
+.graphs .gsvg{max-width:380px}
+#labGraph .gsvg{max-width:500px}
+.hero-graph .gsvg{max-width:460px}
+.status b{font-weight:600}
+.tacct{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);font-size:15px;margin:10px 0}
+.tacct>div{padding:10px 12px}
+.tacct>div:first-child{border-right:2px solid var(--ink)}
+.tacct .th{font-weight:600;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:6px}
+.tacct .row{display:flex;justify-content:space-between;gap:8px}
+.tpair{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:14px 0}
+.tpair .cap{font-size:14px;font-weight:600;margin:0 0 4px}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:14px 0;font-size:15px}
+.chain span{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.chain i{font-style:normal;color:var(--ink3)}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav class="toc" aria-label="Contents">
+  <h2>Contents</h2>
+  <ol id="tocList">
+    <li><a href="#m41"><span class="n">4.1</span>Financial assets<span class="ck">✓</span></a></li>
+    <li><a href="#m42"><span class="n">4.2</span>Nominal vs. real rates<span class="ck">✓</span></a></li>
+    <li><a href="#m43a"><span class="n">4.3A</span>What money is<span class="ck">✓</span></a></li>
+    <li><a href="#m43b"><span class="n">4.3B</span>Central banks and the Fed<span class="ck">✓</span></a></li>
+    <li><a href="#m44"><span class="n">4.4</span>Banks create money<span class="ck">✓</span></a></li>
+    <li><a href="#m45"><span class="n">4.5</span>The money market<span class="ck">✓</span></a></li>
+    <li><a href="#m46"><span class="n">4.6</span>Monetary policy<span class="ck">✓</span></a></li>
+    <li><a href="#m47"><span class="n">4.7</span>Loanable funds<span class="ck">✓</span></a></li>
+    <li><a href="#review"><span class="n">★</span>Cheat sheet<span class="ck"></span></a></li>
+    <li><a href="#quiz"><span class="n">?</span>Practice test<span class="ck"></span></a></li>
+    <li><a href="#glossary"><span class="n">A–Z</span>Glossary<span class="ck"></span></a></li>
+  </ol>
+  <div class="progress"><span id="progTxt">0 of 8 modules studied</span><div class="bar"><span id="progBar"></span></div></div>
+</nav>
+<main>
+<header class="hero">
+  <p class="unit">AP Macroeconomics, Unit 4</p>
+  <h1>The financial sector</h1>
+  <p class="lede">Unit 3 ended with fiscal policy. Unit 4 is about the other big lever: money, banks, and interest rates. By the end you’ll be able to trace exactly how a decision by the Fed ends up changing real GDP and the price level.</p>
+  <div class="hero-graph" id="heroGraph" aria-label="Money market: vertical money supply and downward-sloping money demand crossing at the equilibrium nominal interest rate"></div>
+  <ul class="roadmap">
+    <li><b>Assets and interest (4.1–4.2)</b>Stocks, bonds, banks, and why the real interest rate is what really matters.</li>
+    <li><b>Money (4.3A–4.4)</b>What counts as money, who manages it, and how banks multiply it.</li>
+    <li><b>The money market (4.5)</b>How supply and demand for money set the nominal interest rate.</li>
+    <li><b>Policy and savings (4.6–4.7)</b>How the Fed moves interest rates, and how savers fund investment.</li>
+  </ul>
+  <div class="callout tip"><b class="k">How to use this guide</b><p>Purple “From your textbook” boxes collect the examples, numbers, and AP® Econ Tips from your Krugman reading (pages 192–259). Read each module top to bottom, try the interactive tools, open the “check yourself” questions, and press “Mark as studied” when you finish. Your progress is saved in this browser.</p></div>
+  <div class="callout trap"><b class="k">The one idea to keep straight all unit</b><p>There are two interest-rate graphs. The <b>money market</b> (4.5) puts the <b>nominal</b> interest rate on the vertical axis. The <b>loanable funds market</b> (4.7) puts the <b>real</b> interest rate on the vertical axis. Mixing them up is the most common way to lose points on Unit 4 FRQs.</p></div>
+</header>
+
+<!-- ================= 4.1 ================= -->
+<section class="mod" id="m41" data-mod="m41">
+<header><p class="modnum">Module 4.1</p><h2>Financial assets</h2></header>
+<p class="big">The financial system connects people who have money to lend (savers) with people who want to borrow it (firms with projects, home buyers, governments). Every financial asset is a different deal between those two groups, trading off return, risk, and liquidity.</p>
+
+<h3>The building blocks</h3>
+<dl class="terms">
+  <dt>Wealth</dt>
+  <dd>The value of everything a household owns (its assets) minus everything it owes (its liabilities).</dd>
+  <dt>Physical asset</dt>
+  <dd>A tangible object the owner can use or sell: a house, a car, a factory, a machine.</dd>
+  <dt>Financial asset</dt>
+  <dd>A paper (or digital) claim that entitles the buyer to future income from the seller. Stocks, bonds, loans, and bank deposits are all financial assets.
+    <span class="eg">A bond is an asset to you, the buyer, and a liability to the company that issued it. Every financial asset is someone else’s liability.</span></dd>
+  <dt>Liability</dt>
+  <dd>A requirement to pay money in the future: a loan you must repay, a bond you issued, a deposit a bank must hand back.</dd>
+  <dt>Opportunity cost of holding cash</dt>
+  <dd>Cash is the most liquid asset there is, since there’s no cost to turn cash into cash. But it earns no interest. The interest you could have earned by holding an interest-bearing asset instead is the opportunity cost of holding cash. <mark>This idea is the foundation of the money demand curve in 4.5.</mark></dd>
+  <dt>Rate of return</dt>
+  <dd>The net gain or loss on an asset, as a percentage of what you paid. An asset’s rate of return depends on its <b>liquidity</b> and its <b>financial risk</b>.</dd>
+</dl>
+
+<h3>Three problems, three tasks</h3>
+<p>Borrowers and lenders face three problems. A good financial system’s job is to shrink each one cheaply, so that more mutually beneficial deals happen and society as a whole gets richer.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Problem</th><th>What it means</th><th>How the financial system fixes it</th></tr></thead>
+<tbody>
+<tr><td><b>Transaction costs</b></td><td>The expense of putting a deal together: negotiating, checking the borrower’s ability to pay, writing legal documents.</td><td>A firm needing $1 billion can take one bank loan or sell bonds instead of negotiating thousands of tiny loans.</td></tr>
+<tr><td><b>Financial risk</b></td><td>Uncertainty about future outcomes that involve losses or gains. Most people are risk-averse.</td><td><b>Diversification</b>: investing in several assets with unrelated (independent) risks. Selling shares of a business spreads the risk across many owners.</td></tr>
+<tr><td><b>Liquidity</b></td><td>People want to be able to get cash quickly in an emergency, but businesses and homes are illiquid.</td><td>Banks let depositors hold a liquid asset (a deposit) while the bank lends those funds out for illiquid projects. Stocks and bonds can be resold.</td></tr>
+</tbody></table></div>
+<dl class="terms">
+  <dt>Liquid vs. illiquid</dt>
+  <dd>An asset is <b>liquid</b> if it can be quickly converted into cash without much loss of value (money in a bank). It is <b>illiquid</b> if it can’t (a business, a car, a house).</dd>
+</dl>
+
+<h3>The four basic financial assets</h3>
+<dl class="terms">
+  <dt>Loan</dt>
+  <dd>A lending agreement between one lender and one borrower, such as a car loan or a small-business loan from a bank. Loans are tailored to the borrower, but each one carries high transaction costs.</dd>
+  <dt>Bond</dt>
+  <dd>An interest-bearing asset, basically an IOU issued by the borrower. The seller promises to pay a fixed amount of interest each year and to repay the <b>principal</b> (the face value) on a set date. Big borrowers like corporations and governments use bonds because selling standardized bonds to anyone avoids negotiating with many lenders.
+    <span class="eg">Bond-rating agencies give buyers free information on the issuer’s <b>default</b> risk, the risk it fails to pay. Riskier bonds must pay a higher interest rate to attract buyers. Bonds are easy to resell, which gives buyers liquidity.</span></dd>
+  <dt>Stock</dt>
+  <dd>A share in the ownership of a company, a type of <b>equity</b>. Stocks usually earn a higher return than bonds but carry more risk.
+    <span class="eg">“A bond is a promise, while a stock is a hope.” By law a company pays its bondholders before shareholders get any profit, and if it goes bankrupt its assets go to bondholders while shareholders usually get nothing.</span></dd>
+  <dt>Bank deposit</dt>
+  <dd>A claim on a bank that obliges it to give the depositor cash. If the bank must pay on demand, it’s a <b>demand deposit</b>. A deposit is an asset for the depositor and a liability for the bank.</dd>
+</dl>
+
+<h3>Bond prices and interest rates move in opposite directions</h3>
+<p>This relationship shows up on almost every AP Macro exam.</p>
+<div class="formula">
+  <div class="eq"><span class="hlx">Interest rate ↑ → price of existing bonds ↓</span></div>
+  <div class="eq"><span class="hlx">Interest rate ↓ → price of existing bonds ↑</span></div>
+  <p class="why">Why: say you own an old bond paying 3%. Interest rates rise and new bonds pay 5%. Nobody will pay full price for your 3% bond when they could buy a 5% one, so you have to cut your price until the deal is just as good. When rates fall, your old high-paying bond becomes more attractive and its price rises.</p>
+</div>
+<div class="widget">
+  <h4>Try it: what happens to the price of your bond?</h4>
+  <p class="sub">You own a $1,000 bond that pays $50 a year (5%). Slide the market interest rate on new bonds.</p>
+  <div class="ctl"><label for="bondR">Market interest rate</label><input type="range" id="bondR" min="1" max="10" step="0.5" value="5"><output id="bondRo">5%</output></div>
+  <div class="stats"><div class="stat"><div class="l">Your bond’s yearly interest</div><div class="v">$50</div></div><div class="stat"><div class="l">Approximate price buyers will pay</div><div class="v" id="bondP">$1,000</div></div></div>
+  <div class="status" id="bondS"></div>
+  <p class="sub" style="margin:0">Simplified: price ≈ yearly payment ÷ market rate, as if the bond paid forever. Real bonds have a maturity date, but the direction is the same.</p>
+</div>
+
+<h3>Financial intermediaries</h3>
+<dl class="terms">
+  <dt>Financial intermediary</dt>
+  <dd>An institution that turns funds gathered from many individuals into financial assets.</dd>
+  <dt>Mutual fund</dt>
+  <dd>Buys a portfolio of many stocks and sells shares of that portfolio to small investors. It gives them diversification without the high transaction costs of buying a few shares of dozens of companies themselves.</dd>
+  <dt>Bank</dt>
+  <dd>A financial intermediary that offers liquid assets (deposits) to lenders and uses those funds to finance borrowers’ spending on illiquid assets. It works because, on an average day, only a small fraction of depositors want their cash, and withdrawals and new deposits roughly cancel out.</dd>
+</dl>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>The business owner who sells shares</h4>
+<p>An owner expects more profit from new equipment but isn’t sure. Paying with their savings or by selling their house would expose them to a lot of risk. Instead they sell <b>shares</b> of the company. If profit disappoints, they haven’t lost their other assets; if things go well, shareholders share the profit. They now hold a bank account (financial asset), a house (physical asset), and the unsold part of the business (physical asset), so their total risk is lower. <b>The desire to diversify is why stocks and a stock market exist.</b></p>
+<h4>Microsoft</h4>
+<p>Microsoft has about 7.52 billion shares outstanding, so one share entitles you to a tiny slice of profit and one of 7.52 billion votes. Why didn’t its founders keep the whole company and just sell bonds? Risk: few people are risk-tolerant enough to be the sole owner of a huge company.</p>
+<h4>Deposit insurance</h4>
+<p>The <b>FDIC</b> (Federal Deposit Insurance Corporation) guarantees bank deposits up to <b>$250,000</b>. That lowers depositors’ risk and their incentive to pull money out at the first rumor, so in normal times banks only need to keep a fraction of deposits as cash.</p>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>The price of previously issued bonds always moves in the opposite direction of the interest rate.</p></div>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>Rank a guaranteed-interest bank deposit, a share of a diversified mutual fund, and a share of the family business by liquidity, risk, and return.</summary><div class="ans">Liquidity (highest to lowest): bank deposit, mutual fund share (can be sold quickly), family business share (you need a buyer and everyone’s agreement). Risk (lowest to highest): bank deposit, mutual fund, family business (no diversification). Expected return usually follows risk: bank deposit lowest, family business highest.</div></details>
+<details class="check"><summary>Interest rates in the economy fall. What happens to the price of bonds that were issued last year?</summary><div class="ans">Their price rises. Those older bonds pay more interest than new bonds now do, so buyers are willing to pay more for them.</div></details>
+<details class="check"><summary>Why is a bank deposit a liability for the bank?</summary><div class="ans">Because the bank owes that money to the depositor and must pay it back, often on demand.</div></details>
+<div class="studied"><button type="button" data-done="m41" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.2 ================= -->
+<section class="mod" id="m42" data-mod="m42">
+<header><p class="modnum">Module 4.2</p><h2>Nominal vs. real interest rates</h2></header>
+<p class="big">The interest rate written on a loan isn’t what the lender really earns. Inflation shrinks the purchasing power of the money that gets paid back. The real interest rate strips out inflation and shows the true cost of borrowing and the true reward for lending.</p>
+
+<dl class="terms">
+  <dt>Nominal interest rate</dt>
+  <dd>The interest rate actually written in the loan contract and paid, unadjusted for inflation. It’s the rate banks advertise.</dd>
+  <dt>Real interest rate</dt>
+  <dd>The nominal interest rate adjusted for inflation. It reflects the opportunity cost of lending the funds and what the repayment can actually buy. It equals the nominal rate only when inflation is zero.</dd>
+  <dt>Expected real interest rate</dt>
+  <dd>The real rate borrowers and lenders <i>expect</i> when they sign the loan, based on the inflation they expect.</dd>
+</dl>
+
+<h3>The four equations</h3>
+<div class="formula">
+  <div class="eq"><span class="hlx">Real rate = Nominal rate − Inflation rate</span></div>
+  <div class="eq">Nominal rate = Real rate + Inflation rate</div>
+  <p class="why">These use the <b>actual</b> inflation rate, so you can only calculate the real rate in <b>hindsight</b>, after inflation is known.</p>
+  <div class="eq"><span class="hlx">Expected real rate = Nominal rate − Expected inflation</span></div>
+  <div class="eq">Nominal rate = Expected real rate + Expected inflation</div>
+  <p class="why">These are used <b>in advance</b>, when the loan is being set up. Lenders pick the nominal rate that gives them the real return they want, given the inflation they expect.</p>
+</div>
+
+<h3>Who wins and who loses when inflation surprises</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>What happens</th><th>Real rate turns out…</th><th>Winner</th><th>Loser</th></tr></thead>
+<tbody>
+<tr><td>Actual inflation <b>higher</b> than expected</td><td>Lower than expected</td><td class="up">Borrowers (repay with cheaper dollars)</td><td class="down">Lenders</td></tr>
+<tr><td>Actual inflation <b>lower</b> than expected</td><td>Higher than expected</td><td class="up">Lenders</td><td class="down">Borrowers (repay with more valuable dollars)</td></tr>
+<tr><td>Inflation exactly as expected</td><td>As expected</td><td colspan="2">Nobody: both get the deal they planned</td></tr>
+</tbody></table></div>
+<div class="callout tip"><b class="k">Memory trick</b><p>Surprise inflation is a gift to whoever <b>owes</b> money. Holders of fixed-value assets are hurt by inflation. Assets tied to inflation with a cost-of-living adjustment (COLA) are protected.</p></div>
+
+<div class="widget">
+  <h4>Try it: real interest rate calculator</h4>
+  <p class="sub">A lender sets the nominal rate from the inflation it expects. Then actual inflation happens.</p>
+  <div class="ctl"><label for="rReal">Real rate the lender wants</label><input type="range" id="rReal" min="0" max="8" step="0.5" value="4"><output id="rRealO">4%</output></div>
+  <div class="ctl"><label for="rExp">Expected inflation</label><input type="range" id="rExp" min="0" max="10" step="0.5" value="2"><output id="rExpO">2%</output></div>
+  <div class="ctl"><label for="rAct">Actual inflation</label><input type="range" id="rAct" min="0" max="12" step="0.5" value="3"><output id="rActO">3%</output></div>
+  <div class="stats"><div class="stat"><div class="l">Nominal rate charged</div><div class="v" id="rNom">6%</div></div><div class="stat"><div class="l">Actual real rate</div><div class="v" id="rRes">3%</div></div></div>
+  <div class="status" id="rMsg"></div>
+</div>
+
+<h3>Can interest rates be negative?</h3>
+<p><b>Nominal</b> rates charged by commercial lenders don’t go below zero. A negative nominal rate would mean paying someone to borrow your money; you’d rather just hold cash and earn zero. (A central bank might use negative rates during deflation, but profit-seeking lenders won’t.)</p>
+<p><b>Real</b> rates <i>can</i> be negative when inflation turns out higher than the nominal rate. That happens when the lender’s inflation forecast was too low.</p>
+
+<div class="callout trap"><b class="k">Common mistake</b><p>Knowing two rates changed doesn’t always tell you the third. A higher nominal rate or a lower inflation rate each raises the real rate. But if the nominal rate <b>and</b> inflation both rise, you can’t tell what happens to the real rate without knowing which rose more.</p></div>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>The bank that wants 4%</h4>
+<p>A bank wants a real return of <b>4%</b> and expects <b>2%</b> inflation, so it charges a nominal rate of <b>6%</b>. If actual inflation is 3%, the bank earns only 6 − 3 = <b>3%</b> real, less than it wanted. If actual inflation is just 1%, it earns 6 − 1 = <b>5%</b> real, more than it wanted.</p>
+<h4>A negative real rate</h4>
+<p>A lender wants 4% real and expects 1% inflation, so it lends at 5% nominal. Actual inflation comes in at 6%. Real rate = 5 − 6 = <b>−1%</b>. The repayment can’t even buy what the original loan could.</p>
+<h4>The 8% loan</h4>
+<p>A loan at 8% nominal with 5% inflation has a real rate of 8 − 5 = 3%.</p>
+<h4>U.S. rates, 1960–2020 (Figure 4.2-1)</h4>
+<p>The gap between the nominal and real rate is the inflation rate. Nominal rates were very high in the late 1970s and early 1980s while real rates were much lower, showing how high inflation was. The nominal rate stayed above zero, but the real rate fell below zero in 1975, when actual inflation jumped above expected inflation before people could build the 1974 spike into their expectations.</p>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>A lender wants a 3% real return and expects 4% inflation. What nominal rate should it charge?</summary><div class="ans">Nominal = expected real + expected inflation = 3% + 4% = 7%.</div></details>
+<details class="check"><summary>You borrowed at 7% expecting 4% inflation, but inflation was 6%. Did you gain or lose?</summary><div class="ans">You gained. Your real rate was 7 − 6 = 1%, not the 3% you expected. Higher-than-expected inflation helps borrowers.</div></details>
+<details class="check"><summary>Why can a real interest rate be negative but a commercial nominal rate can’t?</summary><div class="ans">Lenders set nominal rates in advance and would never set one below zero, since holding cash earns zero. The real rate depends on inflation that is only known later, so if inflation turns out higher than the nominal rate, the real rate is negative.</div></details>
+<div class="studied"><button type="button" data-done="m42" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.3A ================= -->
+<section class="mod" id="m43a" data-mod="m43a">
+<header><p class="modnum">Module 4.3A</p><h2>Definition, measurement, and functions of money</h2></header>
+<p class="big">To an economist, money isn’t the same as wealth. Money is any asset that can easily be used to buy goods and services. Your cash and checking account are money; your car, house, and stocks are not, even though they’re part of your wealth.</p>
+
+<dl class="terms">
+  <dt>Money</dt>
+  <dd>Any asset that can easily be used to purchase goods and services. It should be widely accepted, and ideally durable, portable, uniform, limited in supply, and divisible.
+    <span class="eg">The cashier takes dollar bills or your debit card, but not stock certificates or vintage baseball cards. You’d have to sell those for money first.</span></dd>
+  <dt>Currency in circulation</dt>
+  <dd>Actual cash (bills and coins) in the hands of the public.</dd>
+  <dt>Checkable bank deposits</dt>
+  <dd>Bank accounts you can spend from with a check, debit card, or a payment service like Zelle, Venmo, or PayPal. These count as money even if you never turn them into cash.</dd>
+  <dt>Money supply</dt>
+  <dd>The total value of financial assets in the economy that are considered money.</dd>
+</dl>
+
+<h3>Why money matters: no more barter</h3>
+<p>Without money, a doctor who wants a refrigerator would have to find an appliance-store owner who happens to need medical care. That’s the <b>double coincidence of wants</b> problem. Money solves it, which is why money raises welfare even though it doesn’t produce anything itself.</p>
+
+<h3>The three functions of money</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Function</th><th>Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><b>Medium of exchange</b></td><td>An asset people use to trade for goods and services rather than to consume.</td><td>Paying for lunch with cash or a debit card.</td></tr>
+<tr><td><b>Store of value</b></td><td>A way of holding purchasing power over time.</td><td>Saving the $20 you get every birthday in a drawer for years.</td></tr>
+<tr><td><b>Unit of account</b></td><td>The common measure used to set prices and make economic calculations.</td><td>Comparing a $600 apartment with a $700 one; deciding you want “$10 worth” of gas.</td></tr>
+</tbody></table></div>
+<div class="callout tip"><b class="k">Memory trick</b><p>“<b>M</b>oney <b>S</b>erves <b>U</b>s”: <b>M</b>edium of exchange, <b>S</b>tore of value, <b>U</b>nit of account. Spending it = medium. Saving it = store. Pricing with it = unit.</p></div>
+<div class="callout trap"><b class="k">Common mistake</b><p>Store of value is necessary for money but not unique to money. Farmland and classic cars also hold value over time. What makes money special is that it’s the medium of exchange.</p></div>
+
+<h3>Types of money</h3>
+<dl class="terms">
+  <dt>Commodity money</dt>
+  <dd>A medium of exchange that has value in other uses too, like gold, silver, or cigarettes in WWII prison camps.</dd>
+  <dt>Commodity-backed money</dt>
+  <dd>Has no value of its own but can be exchanged for a valuable good on demand, like old paper notes redeemable for gold or silver. It ties up fewer resources, because banks only need to keep enough gold for the few notes redeemed each day.</dd>
+  <dt>Fiat money</dt>
+  <dd>Money whose value comes only from its official status as a means of payment, decreed by the government. <mark>The modern U.S. dollar is fiat money.</mark>
+    <span class="eg">Advantages: it ties up no real resources except paper, and the money supply can be managed to fit the economy rather than how much gold is mined. Risks: counterfeiting, and the temptation for governments to print so much that it causes inflation.</span></dd>
+</dl>
+
+<h3>Measuring the money supply</h3>
+<p>Central banks calculate several <b>monetary aggregates</b>, overall measures of money that differ in how strictly they define it.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Measure</th><th>What’s in it</th><th>Liquidity</th></tr></thead>
+<tbody>
+<tr><td><b>Monetary base</b> (M0 or MB)</td><td>Currency in circulation + bank reserves</td><td>Most liquid: it’s all cash, in wallets or in bank vaults and reserve accounts</td></tr>
+<tr><td><b>M1</b></td><td>Currency in circulation + checkable deposits + other liquid deposits (including certain savings deposits and money market deposit accounts)</td><td>Very liquid; usually what “the money supply” means</td></tr>
+<tr><td><b>M2</b></td><td>M1 + <b>near-moneys</b>: other savings accounts, small-denomination time deposits (like small CDs), retail money market funds</td><td>Broader and less liquid than M1</td></tr>
+</tbody></table></div>
+<dl class="terms">
+  <dt>Near-moneys</dt>
+  <dd>Financial assets that can’t be spent directly but can easily be turned into cash or checkable deposits. They pay more interest than checkable deposits, which is the reward for being less liquid.</dd>
+</dl>
+<div class="callout trap"><b class="k">Common mistakes</b><p>M2 is <b>bigger</b> than M1 (it contains all of M1) but <b>less liquid</b>. Credit cards are not money; they’re a way to borrow. Stocks and bonds are not in M1 or M2.</p></div>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>Money as a highway</h4>
+<p>Adam Smith compared money to a highway that carries all the country’s grain to market but “produces itself not a single pile of either.” He called paper money a “waggon-way through the air,” because it does the highway’s job without paving over useful land, just as paper money frees up gold and silver for other uses.</p>
+<h4>Unusual mediums of exchange</h4>
+<p>U.S. dollars served as money in troubled Latin American countries, euros in troubled Eastern European countries, cigarettes in WWII prisoner-of-war camps (for smokers and nonsmokers alike), and eggs and lumps of coal during Germany’s extreme inflation of 1923. And an economy using ice cream cones as money would suffer a “monetary meltdown,” since they fail as a store of value.</p>
+<h4>Medieval rent</h4>
+<p>Peasants paid landowners in labor and harvest. Imagine comparing “clean my house twice a week and bring a pound of steak daily” with “clean once a week plus four pounds of chicken daily.” With money as the unit of account, $600 vs. $700 a month is easy to compare.</p>
+<h4>The 2020 rule change</h4>
+<p>Savings accounts used to be in M2 only. In April 2020 the Fed relaxed transaction limits on savings accounts, so banks could report them as transaction accounts in M1. The Fed itself said this made savings accounts “almost indistinguishable from checking accounts,” so M1 jumped. In July 2021, currency in circulation was only about 11% of the monetary base.</p>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>References to the money supply usually refer to the M1 measure.</p></div>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>Is a store gift certificate money?</summary><div class="ans">No. It can only be used at certain stores for certain products, so it isn’t widely accepted as a means of payment.</div></details>
+<details class="check"><summary>Why are small CDs in M2 but not in M1?</summary><div class="ans">You pay a penalty to withdraw a CD before it matures, so it can’t be used directly to buy things. It’s less liquid than a checking account, which makes it a near-money.</div></details>
+<details class="check"><summary>You check the price tags on two phones to see which is cheaper. Which function of money is that?</summary><div class="ans">Unit of account: you’re using money to measure and compare value.</div></details>
+<div class="studied"><button type="button" data-done="m43a" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.3B ================= -->
+<section class="mod" id="m43b" data-mod="m43b">
+<header><p class="modnum">Module 4.3B</p><h2>Central banks and the Federal Reserve</h2></header>
+<p class="big">A commercial bank serves the public to earn a profit. A central bank serves the whole banking system and the government: it issues currency, regulates banks, controls the monetary base, and runs monetary policy. In the United States, that’s the Federal Reserve.</p>
+
+<dl class="terms">
+  <dt>Commercial bank</dt>
+  <dd>A financial institution that accepts deposits and makes loans to earn a profit.</dd>
+  <dt>Central bank</dt>
+  <dd>A government institution (sometimes called a reserve bank) that issues a country’s currency, oversees and regulates its banking system, controls its monetary base, and implements monetary policy.</dd>
+  <dt>Monetary policy</dt>
+  <dd>Actions a central bank takes to promote price stability, maximum employment, and economic growth.</dd>
+  <dt>Central bank independence</dt>
+  <dd>Many central banks, like the European Central Bank (ECB), are free to set policy without political pressure, but they must follow a mandate from the government, often price stability plus maximum employment or growth.</dd>
+</dl>
+
+<h3>What central banks do</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Function</th><th>What it looks like</th></tr></thead>
+<tbody>
+<tr><td>Issue and maintain currency</td><td>Keeps bills and coins acceptable for use</td></tr>
+<tr><td>Bank for the government</td><td>Holds the Treasury’s account, makes payments, transfers funds</td></tr>
+<tr><td>Supervise and regulate financial institutions</td><td>Examines banks and enforces rules for stability</td></tr>
+<tr><td>Act as a “banker’s bank”</td><td>Holds reserves, clears checks, provides cash, and transfers funds for commercial banks</td></tr>
+<tr><td>Serve as “lender of last resort”</td><td>Lends to a bank that can’t get funds anywhere else in a crisis</td></tr>
+<tr><td>International relations, data, exchange rates</td><td>Represents the country internationally, publishes data (FRED®), monitors the foreign exchange market</td></tr>
+<tr><td>Conduct monetary policy</td><td>Uses its tools to fight recessions and inflation (Module 4.6)</td></tr>
+</tbody></table></div>
+
+<h3>The Federal Reserve</h3>
+<p>Congress created the Fed in <b>1913</b> after the <b>Panic of 1907</b>, a wave of <b>bank runs</b> (many depositors withdrawing at once out of fear) that spread into a nationwide banking crisis. The Fed was given power to issue currency, require banks to hold adequate reserves, and inspect their books.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Part</th><th>What it is</th><th>Key facts</th></tr></thead>
+<tbody>
+<tr><td><b>Board of Governors</b> (public part)</td><td>Oversees the system from Washington, D.C.</td><td>7 members appointed by the president and confirmed by the Senate for <b>14-year terms</b> to insulate them from politics. The chair serves 4-year terms, usually renewed.</td></tr>
+<tr><td><b>12 regional Federal Reserve Banks</b> (private part)</td><td>Each serves a Federal Reserve district</td><td>Owned by the member commercial banks in the district. They provide banking services and audit banks. <b>The New York Fed</b> carries out open market operations.</td></tr>
+<tr><td><b>Federal Open Market Committee (FOMC)</b></td><td>Makes monetary policy decisions</td><td>The 7 governors + 5 regional bank presidents. The New York Fed president always sits on it; the other 4 seats rotate among the other 11. Meets about every 6 weeks.</td></tr>
+</tbody></table></div>
+<p>The result: the Fed is ultimately accountable to voters (elected officials appoint and confirm the board), but long terms and indirect appointment shield it from short-term political pressure.</p>
+<p>The Fed’s four basic functions are to <b>provide financial services</b>, <b>supervise and regulate banks</b>, <b>maintain the stability of the financial system</b>, and <b>conduct monetary policy</b>. Its monetary policy goals are maximum employment, stable prices, and moderate long-term interest rates. The interest rate it targets is the <b>federal funds rate</b>.</p>
+
+<h3>The Fed’s balance sheet and open market operations</h3>
+<dl class="terms">
+  <dt>T-account</dt>
+  <dd>A table showing what an institution owns (assets, on the left) and what it owes (liabilities, on the right).</dd>
+  <dt>Open market operation (OMO)</dt>
+  <dd>The Fed buying or selling U.S. Treasury bills, normally with commercial banks. <b>The Fed never buys Treasury bills directly from the government.</b></dd>
+</dl>
+<div class="tpair">
+  <div><p class="cap">The Fed’s normal T-account</p><div class="tacct"><div><div class="th">Assets</div>Government debt (Treasury bills)</div><div><div class="th">Liabilities</div>Monetary base (currency in circulation + bank reserves)</div></div></div>
+</div>
+<div class="tpair">
+  <div><p class="cap">(a) Open market purchase of $100 million</p>
+    <div class="tacct"><div><div class="th">Fed: Assets</div><div class="row"><span>Treasury bills</span><b class="up" style="color:var(--good)">+$100M</b></div></div><div><div class="th">Fed: Liabilities</div><div class="row"><span>Monetary base</span><b style="color:var(--good)">+$100M</b></div></div></div>
+    <div class="tacct"><div><div class="th">Banks: Assets</div><div class="row"><span>Treasury bills</span><b style="color:var(--bad)">−$100M</b></div><div class="row"><span>Reserves</span><b style="color:var(--good)">+$100M</b></div></div><div><div class="th">Banks: Liabilities</div>No change</div></div></div>
+  <div><p class="cap">(b) Open market sale of $100 million</p>
+    <div class="tacct"><div><div class="th">Fed: Assets</div><div class="row"><span>Treasury bills</span><b style="color:var(--bad)">−$100M</b></div></div><div><div class="th">Fed: Liabilities</div><div class="row"><span>Monetary base</span><b style="color:var(--bad)">−$100M</b></div></div></div>
+    <div class="tacct"><div><div class="th">Banks: Assets</div><div class="row"><span>Treasury bills</span><b style="color:var(--good)">+$100M</b></div><div class="row"><span>Reserves</span><b style="color:var(--bad)">−$100M</b></div></div><div><div class="th">Banks: Liabilities</div>No change</div></div></div>
+</div>
+<p>Where does the Fed get the money to buy bonds? It creates it with the click of a button that credits banks’ reserve accounts. Since the dollar is fiat money, the Fed can add to the monetary base at its own discretion.</p>
+<div class="callout tip"><b class="k">Memory trick</b><p><b>Buy</b> bonds = <b>B</b>igger money supply. <b>Sell</b> bonds = <b>S</b>maller money supply.</p></div>
+<div class="callout trap"><b class="k">Common mistake</b><p>The Fed directly controls only the <b>monetary base</b>, not the money supply. An OMO changes reserves, which then sets the money multiplier (4.4) in motion. That’s how it influences the money supply and interest rates.</p></div>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>Central banks around the world</h4>
+<p>Sweden’s Riksbank (1668) was the world’s first central bank, followed by the Bank of England (1694). About 75% of the world’s central bank assets are controlled by the central banks of China, the United States, Japan, and the Eurozone. Table 4.3B-1 shows 2021 headlines like “Norges Bank Becomes First in G-10 to Raise Rates” and “Turkey Cuts Rates Despite Rising Inflation.”</p>
+<h4>Fed chairs</h4>
+<p>William McChesney Martin chaired the Fed from 1951 to 1970, and Alan Greenspan from 1987 to 2006, because each first finished another governor’s term. Janet Yellen (2014–2018) was the first woman to chair the Fed and became Secretary of the Treasury in 2021.</p>
+<h4>The 2019 switch to ample reserves</h4>
+<p>In January 2019 the FOMC announced it would run policy in an <b>ample-reserves regime</b>: it would control the federal funds rate mainly by setting its own <b>administered rates</b> rather than by actively managing the quantity of reserves. Before the 2007–2009 crisis, when reserves were scarce, the Fed relied on three tools: reserve requirements, the discount rate, and (most often) open market operations. After the crisis it added <b>quantitative easing</b> (2008–2014 and again in 2020) and began paying <b>interest on reserves</b> in 2008.</p>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>The Federal Reserve is responsible for conducting monetary policy for the United States. Other nations have central banks with different names.</p></div>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>The interest rate targeted by the Federal Reserve when it conducts monetary policy is the federal funds rate.</p></div>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>Why do Fed governors serve 14-year terms?</summary><div class="ans">To insulate them from short-term political pressure, so they can make monetary policy decisions that may be unpopular in the moment.</div></details>
+<details class="check"><summary>The Fed sells $50 million of Treasury bills to banks. What happens to bank reserves and the monetary base?</summary><div class="ans">Both fall by $50 million. Banks pay for the bills out of their reserve accounts.</div></details>
+<details class="check"><summary>Who decides U.S. monetary policy?</summary><div class="ans">The Federal Open Market Committee (FOMC): the seven members of the Board of Governors plus five regional Fed presidents, including the New York Fed president.</div></details>
+<div class="studied"><button type="button" data-done="m43b" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.4 ================= -->
+<section class="mod" id="m44" data-mod="m44">
+<header><p class="modnum">Module 4.4</p><h2>Banking and the expansion of the money supply</h2></header>
+<p class="big">Banks don’t keep all your deposit in the vault. They keep a fraction as reserves and lend the rest. That loan gets spent, deposited in another bank, and lent out again. Each round creates new deposits, so a single deposit can grow into many times its size in new money.</p>
+
+<h3>Key terms</h3>
+<dl class="terms">
+  <dt>Fractional reserve banking system</dt>
+  <dd>A system where banks keep only a fraction of deposits as reserves and lend out the rest.</dd>
+  <dt>Bank reserves</dt>
+  <dd>Currency in bank vaults plus banks’ deposits at the central bank. Reserves are <b>not</b> part of currency in circulation, because the public can’t spend them.</dd>
+  <dt>Reserve ratio</dt>
+  <dd>The fraction of deposits a bank holds as reserves.</dd>
+  <dt>Required reserve ratio / reserve requirement</dt>
+  <dd>The minimum fraction of deposits the central bank says a bank must hold. The Fed cut it to <b>zero</b> in March 2020.</dd>
+  <dt>Required reserves vs. excess reserves</dt>
+  <dd>Required reserves = deposits × required reserve ratio. <b>Excess reserves</b> = total reserves − required reserves. Excess reserves are what a bank can lend.</dd>
+  <dt>Bank capital (equity)</dt>
+  <dd>Assets minus liabilities. Banks must keep assets larger than liabilities by a set percentage (at least 7% of assets in practice).</dd>
+</dl>
+<div class="formula">
+  <div class="eq"><span class="hlx">Required reserves = Deposits × rr</span></div>
+  <div class="eq"><span class="hlx">Excess reserves = Total reserves − Required reserves</span></div>
+</div>
+
+<h3>Reading a bank’s T-account</h3>
+<p>For a bank, <b>loans and reserves are assets</b> (borrowers owe the bank; reserves are cash it owns). <b>Deposits are liabilities</b> (the bank owes them back to depositors).</p>
+<div class="tpair"><div><p class="cap">First Street Bank</p><div class="tacct"><div><div class="th">Assets</div><div class="row"><span>Loans</span><b>$1,000,000</b></div><div class="row"><span>Reserves</span><b>$100,000</b></div></div><div><div class="th">Liabilities</div><div class="row"><span>Deposits</span><b>$1,000,000</b></div><div class="row"><span>Bank capital</span><b>$100,000</b></div></div></div></div></div>
+<p>Reserves are $100,000 on $1,000,000 of deposits, a 10% reserve ratio. Capital of $100,000 is about 9% of its $1.1 million in assets.</p>
+
+<h3>Bank runs and the protections against them</h3>
+<p>A <b>bank run</b> happens when many depositors try to withdraw at once because they fear the bank will fail. Since loans are illiquid, the bank would have to sell them cheaply, which can cause the very failure people feared, a self-fulfilling prophecy. Runs are contagious: a wave of runs at the start of the Great Depression led <b>40% of banks to fail by the end of 1932</b>.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Protection</th><th>How it prevents runs</th></tr></thead>
+<tbody>
+<tr><td><b>Deposit insurance</b> (FDIC)</td><td>Guarantees deposits up to $250,000 per depositor, so there’s no reason to rush to withdraw on a rumor.</td></tr>
+<tr><td><b>Capital requirements</b></td><td>Deposit insurance tempts bank owners to take big risks (they keep the gains while the government covers losses). Requiring owners to hold more assets than deposits puts their own money at risk first.</td></tr>
+<tr><td><b>Reserve requirements</b></td><td>Force banks to keep a minimum fraction of deposits on hand.</td></tr>
+<tr><td><b>The discount window</b></td><td>Banks can borrow from the central bank instead of dumping assets at fire-sale prices.</td></tr>
+</tbody></table></div>
+
+<h3>How banks create money</h3>
+<p>When cash is deposited, the money supply doesn’t change at first: currency in circulation falls and checkable deposits rise by the same amount. Money is created when the bank <b>lends out</b> the excess reserves.</p>
+<div class="formula">
+  <div class="eq"><span class="hlx">Simple money multiplier = 1 ÷ rr</span></div>
+  <div class="eq"><span class="hlx">Max change in deposits = Excess reserves × (1 ÷ rr)</span></div>
+  <div class="eq">Money multiplier = Money supply ÷ Monetary base</div>
+  <p class="why">With rr = 10%, the multiplier is 1 ÷ 0.1 = 10. Each $1 of reserves can support $10 of deposits.</p>
+</div>
+
+<div class="widget">
+  <h4>Try it: money multiplier simulator</h4>
+  <p class="sub">Someone deposits cash that had been under a mattress. Watch each round of lending.</p>
+  <div class="ctl"><label for="mmR">Reserve requirement</label><input type="range" id="mmR" min="5" max="50" step="5" value="10"><output id="mmRo">10%</output></div>
+  <div class="ctl"><label for="mmD">New cash deposit</label><input type="range" id="mmD" min="100" max="5000" step="100" value="1000"><output id="mmDo">$1,000</output></div>
+  <div class="tablewrap"><table id="mmTable"></table></div>
+  <div class="stats">
+    <div class="stat"><div class="l">Money multiplier</div><div class="v" id="mmK">10</div></div>
+    <div class="stat"><div class="l">Excess reserves at first bank</div><div class="v" id="mmE">$900</div></div>
+    <div class="stat"><div class="l">Max new deposits created</div><div class="v" id="mmT">$9,000</div></div>
+    <div class="stat"><div class="l">Max change in money supply</div><div class="v" id="mmM">$9,000</div></div>
+  </div>
+  <div class="status" id="mmS"></div>
+</div>
+
+<div class="callout trap"><b class="k">The two calculation traps</b>
+<p><b>1. Cash deposit vs. new reserves from the Fed.</b> When someone deposits cash that was already in circulation, the money supply first stays the same (cash becomes a deposit). Only the <b>excess reserves</b> get multiplied. So with a $1,000 cash deposit and rr = 10%, the maximum increase in the money supply is $900 × 10 = <b>$9,000</b> (total deposits can rise by $10,000, but $1,000 of that just replaced cash). When the Fed buys bonds from a bank, all the new reserves are excess reserves and none came out of circulation, so the whole amount is multiplied: a $1,000 purchase can raise the money supply by up to $10,000.</p>
+<p><b>2. “Maximum” is the key word.</b> The simple multiplier gives the most money that <i>could</i> be created. In reality it’s smaller.</p></div>
+
+<h3>Why the real multiplier is smaller</h3>
+<ul>
+  <li><b>The public holds cash.</b> If borrowers keep some of their loan in their wallets instead of depositing it, that money “leaks” out of the banking system and can’t be lent again.</li>
+  <li><b>Banks hold excess reserves.</b> If banks choose not to lend everything they could, less money is created. With a 0% reserve requirement, think of the multiplier as using the bank’s <i>desired</i> reserve ratio.</li>
+</ul>
+
+<h3>Monetary base vs. money supply</h3>
+<figure><div id="figVenn"></div><figcaption>Currency in circulation is in both. Bank reserves are only in the monetary base (nobody can spend them). Checkable deposits are only in the money supply. Each dollar of reserves backs several dollars of deposits, which is why the money supply is bigger than the base.</figcaption></figure>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>Samantha’s Smoothies</h4>
+<p>A non-bank T-account: the business owns a building and smoothie-making equipment (assets) and borrowed $20,000 from a bank (liability). Owner’s equity of $25,000 balances the two sides. Owner’s equity = assets − liabilities.</p>
+<h4>Silas, Mariama, and Aanya (Figure 4.4-3, Table 4.4-1)</h4>
+<p>Silas, a miser, deposits $1,000 from a shoebox into First Street Bank. Money supply: unchanged at $1,000 (cash down $1,000, deposits up $1,000). The bank keeps $100 (10%) and lends $900 to his neighbor Mariama. Money supply: <b>$1,900</b>. Mariama buys a laptop from Acme Computers; owner Aanya Acme deposits the $900 at Second Street Bank, which keeps $90 and lends $810. Money supply: <b>$2,710</b>. And so on. The process also works in reverse: <b>when loans are repaid, money is destroyed.</b></p>
+<h4>Drive-a-Peach Used Cars</h4>
+<p>If First Street needs cash fast, it could sell its $100,000 loan to Drive-a-Peach Used Cars. But buyers would suspect the loan is risky and pay only a fire-sale price. That’s why bank loans are illiquid and why runs are so dangerous.</p>
+<h4>Real-world numbers</h4>
+<p>The FDIC raised its coverage in 2008 to $250,000. In April 2020, after the reserve requirement went to zero, U.S. banks’ excess reserves exceeded $2.95 trillion. Because the public holds a lot of cash, and a dollar of currency in circulation doesn’t support several dollars of deposits the way a dollar of reserves can, the actual money multiplier is much smaller than 1/rr.</p>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>When we say that banks create money, we mean that they increase the amount recorded in depositors’ accounts; they don’t print more currency. Only the Treasury does that.</p></div>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>The simple money multiplier is 1/rr, where rr is the reserve ratio. The money multiplier is used to explain and calculate money creation.</p></div>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>A bank has $500,000 in deposits, $80,000 in reserves, and rr = 10%. What are its excess reserves?</summary><div class="ans">Required reserves = $500,000 × 0.10 = $50,000. Excess reserves = $80,000 − $50,000 = $30,000.</div></details>
+<details class="check"><summary>With rr = 20%, the Fed buys $2 million of bonds from banks. What is the maximum change in the money supply?</summary><div class="ans">Multiplier = 1 ÷ 0.20 = 5. All $2 million is new excess reserves, so the money supply can rise by up to $2 million × 5 = $10 million.</div></details>
+<details class="check"><summary>With rr = 20%, someone deposits $2,000 in cash. What is the maximum change in the money supply?</summary><div class="ans">Excess reserves = $2,000 − $400 = $1,600. Maximum change = $1,600 × 5 = $8,000. (Deposits can rise by $10,000, but $2,000 of that just replaced cash that was already money.)</div></details>
+<details class="check"><summary>Why does deposit insurance require capital requirements to go with it?</summary><div class="ans">Insured depositors stop watching their bank, and owners are tempted to make risky loans since the government covers losses. Capital requirements make owners put their own money at risk first.</div></details>
+<div class="studied"><button type="button" data-done="m44" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.5 ================= -->
+<section class="mod" id="m45" data-mod="m45">
+<header><p class="modnum">Module 4.5</p><h2>The money market</h2></header>
+<p class="big">The interest rate is the price of holding money. Money demand slopes down because a higher interest rate makes holding cash more costly. Money supply is a vertical line because the central bank picks it. Where they cross sets the equilibrium nominal interest rate.</p>
+
+<h3>Money demand</h3>
+<dl class="terms">
+  <dt>Money demand curve (MD)</dt>
+  <dd>Shows the relationship between the nominal interest rate and the quantity of money people want to hold. It slopes <b>downward</b>: a higher interest rate raises the opportunity cost of holding money, so people hold less.
+    <span class="eg">At a 0.15% interest rate, the interest you give up by holding cash is tiny, so you keep plenty. At 15% (reached in the early 1980s), holding cash is expensive, so you keep only what you need.</span></dd>
+</dl>
+<div class="callout tip"><b class="k">Why the nominal rate is on the axis</b><p>The cost of holding money includes both the real return you give up and the purchasing power you lose to inflation. The nominal interest rate includes both, so it’s the right price for the money market.</p></div>
+<figure><div class="graphs"><div class="gwrap" id="figMD"></div><div class="gwrap" id="figMDshift"></div></div>
+<figcaption>Left: a change in the interest rate is a movement along MD. Right: changes in anything else shift the whole curve.</figcaption></figure>
+
+<h3>What shifts money demand</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Shifter</th><th>MD shifts right when…</th><th>MD shifts left when…</th></tr></thead>
+<tbody>
+<tr><td>Aggregate price level</td><td>Prices rise (you need more money to buy the same things)</td><td>Prices fall</td></tr>
+<tr><td>Real GDP</td><td>Real GDP rises (more purchases to make)</td><td>Real GDP falls</td></tr>
+<tr><td>Technology</td><td>(rare)</td><td>ATMs, debit cards, Venmo, Zelle, and PayPal make it easy to pay without holding cash</td></tr>
+<tr><td>Banking regulations / institutions</td><td>Rules make it cheaper to hold money (for example, allowing interest on checking accounts)</td><td>Rules make holding money less attractive</td></tr>
+</tbody></table></div>
+<div class="callout tip"><b class="k">Memory trick</b><p>MD shifters: <b>P</b>rices, <b>G</b>DP, <b>T</b>echnology, <b>R</b>egulations (“<b>PGTR</b>”). Money demand is <b>proportional</b> to the price level: if prices rise 20%, money demanded at every interest rate rises 20%.</p></div>
+
+<h3>Money supply</h3>
+<dl class="terms">
+  <dt>Money supply curve (MS)</dt>
+  <dd>A <b>vertical</b> line at the quantity of money the central bank chooses. It doesn’t depend on the interest rate. The central bank shifts it right (more money) or left (less money) using its tools: open market operations, reserve requirements, quantitative easing.</dd>
+</dl>
+
+<h3>Equilibrium and disequilibrium</h3>
+<figure><div id="figMME"></div><figcaption>Equilibrium is at E. At a rate below equilibrium (point L), people want more money than exists, a shortage. They sell bonds and other interest-bearing assets to get money, and sellers must offer higher rates, so the rate rises. At a rate above equilibrium (point H), there’s a surplus of money. People buy interest-bearing assets, and the rate falls.</figcaption></figure>
+<div class="callout trap"><b class="k">Common mistake</b><p>A <b>shortage</b> of money pushes the interest rate <b>up</b>, and a <b>surplus</b> pushes it <b>down</b>. Students often flip these. Think: if everyone wants cash, people sell bonds, bond prices fall, and interest rates rise.</p></div>
+
+<h3>Changes in the equilibrium interest rate</h3>
+<figure><div class="graphs"><div class="gwrap" id="figMSdown"></div><div class="gwrap" id="figMDup"></div><div class="gwrap" id="figMSup"></div><div class="gwrap" id="figMDdown"></div></div>
+<figcaption>Interest rate rises: money supply decreases or money demand increases (top row). Interest rate falls: money supply increases or money demand decreases (bottom row).</figcaption></figure>
+
+<div class="widget" id="mmLab">
+  <h4>Try it: money market lab</h4>
+  <p class="sub">Click events and watch the curves and the interest rate change. Events stack, so press Reset to start over.</p>
+  <div id="mlGraph"></div>
+  <div class="btns" id="mlBtns"></div>
+  <div class="status" id="mlS"></div>
+</div>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>The opportunity cost of holding money (Table 4.5-1)</h4>
+<p>In September 2021, one-year CDs paid 0.15%, savings and money market accounts paid even less, and currency paid <b>0</b>. The more accessible the money, the lower the interest, because you pay for convenience by giving up interest. In January 2022, savings accounts paid around 0.4%, so the opportunity cost of holding money was very low.</p>
+<h4>Short-term vs. long-term rates</h4>
+<p>Short-term rates (on assets due within a year) move together, so we treat them as one rate. Long-term rates reflect what the market expects short-term rates to do; when long-term rates are above short-term rates, the market expects short-term rates to rise. Money demand depends on <b>short-term</b> rates.</p>
+<h4>The 45-cent McDonald’s meal</h4>
+<p>Americans hold far more money today than decades ago, when a burger, fries, and a drink cost 45 cents and gas was 29 cents a gallon. Higher prices mean more money demanded.</p>
+<h4>Checking accounts before 1980</h4>
+<p>Until 1980, U.S. banks weren’t allowed to pay interest on checking accounts, which made holding money in checking more costly. Changing that rule changed money demand.</p>
+<h4>A different model</h4>
+<p>The money market model sets the <b>nominal</b> rate; the loanable funds model (Module 4.7) sets the <b>real</b> rate. The two are different but consistent.</p>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>We focus on the role of interest rates in the economy by considering a single, representative short-run interest rate, i (though we know there are many different interest rates).</p></div>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>Changes in the aggregate price level, real GDP, technology, and banking institutions increase or decrease money demand. These changes can be shown on a money market graph as a shift of the money demand curve.</p></div>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>Real GDP falls in a recession. What happens to money demand and the interest rate?</summary><div class="ans">People make fewer purchases, so MD shifts left. With MS unchanged, the equilibrium nominal interest rate falls.</div></details>
+<details class="check"><summary>The interest rate rises. Does money demand shift?</summary><div class="ans">No. A change in the interest rate is a movement along the MD curve to a smaller quantity of money demanded.</div></details>
+<details class="check"><summary>Why is the money supply curve vertical?</summary><div class="ans">The central bank chooses the quantity of money, and that quantity doesn’t depend on the interest rate.</div></details>
+<div class="studied"><button type="button" data-done="m45" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.6 ================= -->
+<section class="mod" id="m46" data-mod="m46">
+<header><p class="modnum">Module 4.6</p><h2>Monetary policy</h2></header>
+<p class="big">Monetary policy works through interest rates. Lower rates make borrowing cheaper, so investment and interest-sensitive consumer spending rise and AD shifts right. Higher rates do the opposite. The only thing that differs between the old and new systems is <i>how</i> the central bank moves the rate.</p>
+
+<h3>Goals and the two kinds of policy</h3>
+<dl class="terms">
+  <dt>Price stability and inflation targeting</dt>
+  <dd>A main goal is to prevent deflation and high inflation. Many central banks, including the Fed (since 2012, under Chair Ben Bernanke), set an explicit inflation target and aim for it. That approach is called <b>inflation targeting</b>.</dd>
+  <dt>Expansionary monetary policy</dt>
+  <dd>Lowers interest rates to shift AD right. Used to close a <b>recessionary (negative) output gap</b>. Real GDP rises; the price level also rises.</dd>
+  <dt>Contractionary monetary policy</dt>
+  <dd>Raises interest rates to shift AD left. Used to close an <b>inflationary (positive) output gap</b>. The price level falls (or rises more slowly); real GDP also falls.</dd>
+</dl>
+<h4>Expansionary chain</h4>
+<div class="chain"><span>Interest rate ↓</span><i>→</i><span>Investment and interest-sensitive C ↑</span><i>→</i><span>AD ↑ (shifts right, via the multiplier)</span><i>→</i><span>Real GDP ↑, PL ↑, unemployment ↓</span></div>
+<h4>Contractionary chain</h4>
+<div class="chain"><span>Interest rate ↑</span><i>→</i><span>Investment and interest-sensitive C ↓</span><i>→</i><span>AD ↓ (shifts left)</span><i>→</i><span>Real GDP ↓, PL ↓, unemployment ↑</span></div>
+<p>“Interest-sensitive consumption” means things people borrow to buy, like houses and cars.</p>
+
+<h3>The policy rate</h3>
+<dl class="terms">
+  <dt>Overnight interbank lending rate (policy rate)</dt>
+  <dd>The rate at which banks lend reserves to each other overnight. It’s the rate central banks target, and other interest rates follow it. In the U.S., it’s the <b>federal funds rate</b>, set in the <b>federal funds market</b>. The FOMC sets a <b>target</b> (or target range) for it.</dd>
+  <dt>Transmission mechanism</dt>
+  <dd>The chain from the policy decision to the economy: the central bank sets the policy rate → that affects short-term and longer-term rates → financial conditions → spending decisions → progress toward maximum employment and stable prices.</dd>
+</dl>
+
+<h3>Limited reserves vs. ample reserves</h3>
+<div class="tablewrap"><table>
+<thead><tr><th></th><th>Limited (scarce) reserves</th><th>Ample reserves (U.S. today)</th></tr></thead>
+<tbody>
+<tr><td>How rates move</td><td>Small changes in the quantity of reserves shift MS and change the interest rate</td><td>Changes in reserves barely move the rate; the central bank sets rates it administers</td></tr>
+<tr><td>Tools</td><td>Open market operations, reserve requirement, discount rate</td><td>Interest on reserve balances (IORB, the main tool), overnight reverse repurchase agreements (supplemental), quantitative easing</td></tr>
+<tr><td>Graph to draw</td><td><b>Money market</b> (MS shifts)</td><td><b>Market for reserves</b> (IOR shifts reserve demand)</td></tr>
+</tbody></table></div>
+
+<h3>Traditional tools (limited reserves)</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Tool</th><th>Expansionary (fight recession)</th><th>Contractionary (fight inflation)</th></tr></thead>
+<tbody>
+<tr><td><b>Open market operations</b> (most used)</td><td><b>Buy</b> government bonds → reserves ↑ → MS ↑ → i ↓</td><td><b>Sell</b> government bonds → reserves ↓ → MS ↓ → i ↑</td></tr>
+<tr><td><b>Reserve requirement</b></td><td><b>Lower</b> it → banks lend more, multiplier ↑ → MS ↑ → i ↓</td><td><b>Raise</b> it → banks lend less → MS ↓ → i ↑</td></tr>
+<tr><td><b>Discount rate</b> (rate the central bank charges banks for loans)</td><td><b>Lower</b> it → borrowing reserves is cheaper</td><td><b>Raise</b> it → borrowing reserves is costlier</td></tr>
+</tbody></table></div>
+<figure><div class="graphs"><div class="gwrap" id="figOMObuy"></div><div class="gwrap" id="figOMOsell"></div></div>
+<figcaption>Left: the policy rate i₁ is above the target, so the central bank buys bonds, MS shifts right, and the rate falls to the target. Right: the rate is below the target, so it sells bonds, MS shifts left, and the rate rises.</figcaption></figure>
+
+<h3>The full picture: money market + AD–AS</h3>
+<figure><div class="graphs"><div class="gwrap" id="figExpMM"></div><div class="gwrap" id="figExpAD"></div></div>
+<figcaption>Expansionary policy in a recessionary gap. The open market purchase shifts MS right and lowers i (left). Lower i raises investment, so AD shifts right toward potential output (right).</figcaption></figure>
+<figure><div class="graphs"><div class="gwrap" id="figConMM"></div><div class="gwrap" id="figConAD"></div></div>
+<figcaption>Contractionary policy in an inflationary gap. The open market sale shifts MS left and raises i. Higher i lowers investment, so AD shifts left back toward potential output.</figcaption></figure>
+
+<h3>Modern tools (ample reserves)</h3>
+<dl class="terms">
+  <dt>Quantitative easing (QE)</dt>
+  <dd>Large-scale purchases of assets by the central bank to provide liquidity. Unlike traditional OMOs, which use short-term government bonds, QE buys <b>longer-term</b> government bonds, private corporate bonds, and mortgage-backed securities. It’s expansionary.</dd>
+  <dt>Interest on reserve balances (IORB / IOR)</dt>
+  <dd>The interest the central bank pays banks on their reserves. Raising it makes holding reserves more attractive than lending, so it pushes the policy rate up (contractionary). Lowering it pushes the policy rate down (expansionary).</dd>
+  <dt>Administered rates</dt>
+  <dd>Rates the Fed sets directly: the IORB and the rate on overnight reverse repurchase agreements. Together they keep the market-determined federal funds rate inside the FOMC’s target range.</dd>
+  <dt>Arbitrage</dt>
+  <dd>“Buy low, sell high.” If the fed funds rate fell below the IOR, banks would borrow in the fed funds market and park the money as reserves to earn the higher IOR. That extra borrowing pushes the fed funds rate back up, so it can’t fall much below the IOR.</dd>
+  <dt>Zero bound</dt>
+  <dd>Nominal interest rates can’t go much below zero, which limits how far a central bank can cut. That’s one reason central banks turned to QE.</dd>
+</dl>
+
+<h3>The market for reserves</h3>
+<p>The demand for reserves has three parts:</p>
+<ul>
+  <li>Horizontal at the <b>discount rate</b> at very low reserves (no bank will pay more than it costs to borrow from the central bank).</li>
+  <li>Downward-sloping in the middle.</li>
+  <li>Horizontal at the <b>interest rate on reserves</b> once reserves are ample (banks won’t lend for less than they earn holding reserves).</li>
+</ul>
+<p>The supply of reserves is vertical, set by the central bank. In an ample-reserves regime, the central bank keeps supply in the flat right-hand section, so <mark>the policy rate is set by the IOR, not by the quantity of reserves</mark>.</p>
+<figure><div class="graphs"><div class="gwrap" id="figRes"></div><div class="gwrap" id="figResIOR"></div></div>
+<figcaption>Left: with ample reserves, supply crosses demand on its flat section, so the policy rate equals the IOR. Shifting supply left or right a bit wouldn’t change the rate. Right: raising the IOR shifts the flat section of demand up, raising the policy rate.</figcaption></figure>
+
+<h3>Monetary policy lags</h3>
+<p>Like fiscal policy, monetary policy has lags: it takes time to recognize a problem and time for the policy to affect the economy. But a central bank can act much faster than Congress, so <b>monetary policy lags are shorter</b>, which is why monetary policy is the preferred stabilization tool.</p>
+
+<div class="callout trap"><b class="k">Common mistakes</b>
+<p>The Fed does <b>not</b> set taxes or government spending; that’s fiscal policy. The Fed never buys bonds directly from the Treasury. And on an AD–AS graph, monetary policy shifts <b>AD</b>, never SRAS or LRAS in the short run.</p></div>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>China’s reserve requirement</h4>
+<p>The People’s Bank of China is a recent example of a central bank using its reserve requirement as a policy tool. Most central banks, though, don’t rely on it; the Fed cut its requirement to zero in March 2020, and the next month U.S. banks held more than $2.95 trillion in excess reserves.</p>
+<h4>The discount rate in 2020</h4>
+<p>U.S. discount rates are usually set just above the federal funds rate. In March 2020, at the start of the pandemic, the Fed narrowed the spread between them. The name “discount window” comes from the actual teller’s window where banks used to borrow.</p>
+<h4>Why the Fed never buys directly from the government</h4>
+<p>If a central bank buys debt straight from the government, it’s printing money to fund the budget deficit, which historically has been a formula for disastrous inflation.</p>
+<h4>Powell on administered rates</h4>
+<p>In 2019, Fed Chair Jerome Powell explained: “The Federal Reserve sets two overnight interest rates: the interest rate paid on banks’ reserve balances and the rate on our reverse repurchase agreements. We use these two administered rates to keep a market-determined rate, the federal funds rate, within a target range set by the FOMC.” Paying interest on reserves was authorized in 2006 to start in 2011, but the 2008 Emergency Economic Stabilization Act moved it up to 2008.</p>
+<p>“The IOR is the carrot and the reserve requirement is the stick.”</p>
+<h4>The 2007–2009 crisis</h4>
+<p>Traditional tools weren’t enough to stop the Great Recession from getting worse, so the Fed expanded lending to banks and non-bank financial institutions, reduced the stigma of borrowing at the discount window, increased transparency, and used QE.</p>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>When answering any question about monetary policy, be careful to note whether the banking system has ample reserves or limited reserves. Quantity-based policies, like OMOs and reserve requirements, are used to change the nominal interest rate only in economies with limited reserves. In economies with ample reserves, like the United States, the central bank changes the nominal interest rate using administered rates, for example the interest rate paid on reserves.</p></div>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>The money market is used to show how central bank policies, like OMOs, affect nominal interest rates. The market for reserves is used to show how central bank policies, like changes in the IOR, affect nominal interest rates.</p></div>
+<div class="aptip"><b class="k">AP® Econ Tip</b><p>The policy rate is the central bank’s target for the overnight interbank lending rate, which for the Fed is the federal funds rate, the interest rate U.S. commercial banks charge each other for overnight loans.</p></div>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>The economy has a recessionary gap and limited reserves. Name the open market operation and trace its effects.</summary><div class="ans">Buy government bonds. Reserves ↑ → money supply ↑ → nominal interest rate ↓ → investment and interest-sensitive consumption ↑ → AD ↑ → real GDP ↑ and price level ↑, unemployment ↓.</div></details>
+<details class="check"><summary>With ample reserves, the Fed wants to fight inflation. What does it do?</summary><div class="ans">Raise the interest rate on reserve balances (IORB). The policy rate rises with it, interest rates across the economy rise, investment falls, and AD shifts left.</div></details>
+<details class="check"><summary>Why are monetary policy lags shorter than fiscal policy lags?</summary><div class="ans">The FOMC can decide and act at a single meeting, while fiscal policy needs Congress and the president to pass legislation.</div></details>
+<div class="studied"><button type="button" data-done="m46" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= 4.7 ================= -->
+<section class="mod" id="m47" data-mod="m47">
+<header><p class="modnum">Module 4.7</p><h2>The loanable funds market</h2></header>
+<p class="big">Savers supply funds and firms with investment projects demand them. The loanable funds market brings them together, and the price that clears it is the <b>real</b> interest rate. This is where government deficits cause crowding out.</p>
+
+<h3>Savings always equals investment</h3>
+<p>In a simple economy with no government or trade, total income = total spending. Income is either consumed or saved, and spending is either consumption or investment. Cancel consumption from both sides and you get the <b>savings–investment spending identity</b>: savings = investment spending. It’s an accounting fact, not a theory.</p>
+<dl class="terms">
+  <dt>Budget balance</dt>
+  <dd>Tax revenue minus government spending. Positive = <b>budget surplus</b> (government saving). Negative = <b>budget deficit</b> (government “dissaving”).</dd>
+  <dt>Private savings</dt>
+  <dd>Disposable income minus consumption.</dd>
+  <dt>National savings</dt>
+  <dd>Private savings + the budget balance.</dd>
+  <dt>Net capital inflow</dt>
+  <dd>Inflow of foreign funds minus outflow of domestic funds to other countries. It can be negative.</dd>
+</dl>
+<div class="formula">
+  <div class="eq"><span class="hlx">National savings = Private savings + Budget balance</span></div>
+  <div class="eq"><span class="hlx">Investment = National savings + Net capital inflow</span></div>
+  <p class="why">In a closed economy, investment = national savings. In an open economy, foreign savings can fund some investment too.</p>
+</div>
+
+<h3>Demand and supply of loanable funds</h3>
+<dl class="terms">
+  <dt>Loanable funds market</dt>
+  <dd>A simplified market that brings together savers (lenders) and borrowers with investment projects. Its price is the <b>real interest rate, r</b>.</dd>
+  <dt>Demand for loanable funds (D<sub>LF</sub>)</dt>
+  <dd>Slopes <b>downward</b>. A firm borrows only if its project’s rate of return is at least the interest rate. The lower the rate, the more projects are worth doing.</dd>
+  <dt>Supply of loanable funds (S<sub>LF</sub>)</dt>
+  <dd>Slopes <b>upward</b>. Saving means giving up consumption now; a higher real interest rate rewards you with more future consumption, so people save more.</dd>
+</dl>
+<div class="formula">
+  <div class="eq"><span class="hlx">Rate of return = (Revenue from project − Cost of project) ÷ Cost of project × 100</span></div>
+  <p class="why">Example: a $300,000 project that brings in $315,000 has a rate of return of $15,000 ÷ $300,000 × 100 = 5%. A firm would fund it only if the interest rate is 5% or less.</p>
+</div>
+<figure><div id="figLF"></div><figcaption>At the equilibrium real interest rate, the quantity supplied equals the quantity demanded. Above it there’s a surplus of loanable funds that pushes r down; below it there’s a shortage that pushes r up.</figcaption></figure>
+<p>The equilibrium is efficient in two ways: the projects with the highest returns get funded, and the savers willing to lend at the lowest rates are the ones who lend.</p>
+
+<h3>What shifts each curve</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Curve</th><th>Shifter</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td rowspan="2"><b>Demand</b> (borrowers)</td><td>Perceived business opportunities</td><td>Business optimism or an <b>investment tax credit</b> → D<sub>LF</sub> right. Pessimism → left.</td></tr>
+<tr><td>Government borrowing</td><td>A bigger <b>budget deficit</b> → government borrows more → D<sub>LF</sub> right. A smaller deficit → left.</td></tr>
+<tr><td rowspan="2"><b>Supply</b> (savers)</td><td>Private saving behavior</td><td>People feel richer and save less → S<sub>LF</sub> left. People save more → right.</td></tr>
+<tr><td>Capital inflows</td><td>Foreigners see the country as a safe place for their money → S<sub>LF</sub> right.</td></tr>
+</tbody></table></div>
+<div class="callout trap"><b class="k">Where does a deficit go?</b><p>The textbook treats government borrowing as a shift of <b>demand</b> to the right. Some teachers draw a deficit as a leftward shift of supply instead (less public saving). Both raise the real interest rate. On the AP exam, either is accepted if your graph is labeled correctly and r rises, but check which way your teacher wants.</p></div>
+<figure><div class="graphs"><div class="gwrap" id="figLFD"></div><div class="gwrap" id="figLFS"></div></div>
+<figcaption>Left: more demand for loanable funds (for example, a bigger budget deficit) raises r and the quantity of loanable funds. Right: more supply (for example, more capital inflows) lowers r and raises the quantity.</figcaption></figure>
+
+<h3>Crowding out</h3>
+<dl class="terms">
+  <dt>Crowding out</dt>
+  <dd>The negative effect of government budget deficits on private investment spending. The deficit raises the real interest rate, and the higher rate means fewer private projects are worth funding.</dd>
+</dl>
+<div class="chain"><span>Budget deficit ↑</span><i>→</i><span>D<sub>LF</sub> shifts right</span><i>→</i><span>Real interest rate ↑</span><i>→</i><span>Private investment ↓</span><i>→</i><span>Less capital, slower long-run growth</span></div>
+
+<h3>Inflation expectations move interest rates</h3>
+<p>Arguably the biggest factor behind changes in interest rates over time is changing <b>expectations of inflation</b>. Higher expected inflation raises nominal interest rates; lower expected inflation lowers them. That’s why rates are much lower today than in the late 1970s and early 1980s. If expectations turn out wrong, wealth gets redistributed between borrowers and lenders (Module 4.2).</p>
+
+<div class="book"><p class="bh">From your textbook: Krugman’s Macroeconomics for the AP® Course</p>
+<h4>The equilibrium example (Figures 4.7-1 to 4.7-3)</h4>
+<p>At a 12% interest rate, businesses want to borrow $150 billion; at 4%, they want more. Savers supply $150 billion at 4% and more at 12%. Equilibrium is at <b>8%</b> with <b>$300 billion</b> lent and borrowed. Projects returning 8% or more get funded; lenders who demand more than 8% don’t lend.</p>
+<h4>Real-world shifts</h4>
+<ul>
+<li><b>Business optimism:</b> the U.S. Small Business Optimism Index fell to 98.2 in October 2021, a seven-month low and well below its 2018 high near 108. Pessimism shifts D<sub>LF</sub> left.</li>
+<li><b>Investment tax credit:</b> a credit for renewable energy raises the return on solar and wind projects, shifting D<sub>LF</sub> right.</li>
+<li><b>Government borrowing:</b> from 2000 to 2003, the U.S. went from surplus to deficit, and net federal borrowing went from −$189 billion (the government was supplying funds by paying off debt) to +$377.6 billion. In 2020 the deficit hit a record of about $3.13 trillion.</li>
+<li><b>Private saving:</b> rising home prices from 2000 to 2006 made homeowners feel richer, so they saved less (S<sub>LF</sub> left). Falling home prices from 2006 to 2009 did the opposite.</li>
+<li><b>Capital inflows:</b> Brazil drew large inflows from 2009 to 2016 after years of reforms made it look safe. In January 2020, new foreign direct investment into the U.S. was $120.7 billion.</li>
+</ul>
+<h4>U.S. 2020 numbers</h4>
+<p>Investment spending was $3,637.8 billion; private savings were $1,190.9 billion, offset by a budget deficit of $3,129.2 billion and supplemented by capital inflows. The numbers don’t add up exactly because of a “statistical discrepancy,” an error in the data, not the theory.</p>
+<h4>The zero-interest loan</h4>
+<p>A firm borrows $10,000 at 10% nominal and repays $11,000. If prices rose 10% that year, the real rate is zero: the $11,000 buys exactly what the $10,000 did. The true cost of borrowing is the real rate.</p>
+</div>
+
+<h4>Check yourself</h4>
+<details class="check"><summary>The government’s budget deficit increases. Show what happens in the loanable funds market.</summary><div class="ans">Demand for loanable funds shifts right (the government borrows more). The real interest rate rises and private investment falls: crowding out.</div></details>
+<details class="check"><summary>Private savings = $500B, budget balance = −$200B, net capital inflow = $100B. What is investment?</summary><div class="ans">National savings = $500B − $200B = $300B. Investment = $300B + $100B = $400B.</div></details>
+<details class="check"><summary>Which interest rate is on the vertical axis of the loanable funds graph, and which is on the money market graph?</summary><div class="ans">Loanable funds: the real interest rate (r). Money market: the nominal interest rate (i).</div></details>
+<div class="studied"><button type="button" data-done="m47" aria-pressed="false">Mark as studied</button></div>
+</section>
+
+<!-- ================= Cheat sheet ================= -->
+<section class="mod" id="review">
+<header><p class="modnum">Review</p><h2>Unit 4 cheat sheet</h2></header>
+<h3>Every formula</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Formula</th><th>Module</th></tr></thead>
+<tbody>
+<tr><td>Real interest rate = nominal rate − inflation rate (hindsight)</td><td>4.2</td></tr>
+<tr><td>Nominal rate = expected real rate + expected inflation (in advance)</td><td>4.2</td></tr>
+<tr><td>Monetary base = currency in circulation + bank reserves</td><td>4.3A</td></tr>
+<tr><td>M1 = currency in circulation + checkable deposits + other liquid deposits</td><td>4.3A</td></tr>
+<tr><td>M2 = M1 + near-moneys (savings, small time deposits, retail money market funds)</td><td>4.3A</td></tr>
+<tr><td>Required reserves = deposits × rr</td><td>4.4</td></tr>
+<tr><td>Excess reserves = total reserves − required reserves</td><td>4.4</td></tr>
+<tr><td>Simple money multiplier = 1 ÷ rr</td><td>4.4</td></tr>
+<tr><td>Max change in money supply = excess reserves × (1 ÷ rr)</td><td>4.4</td></tr>
+<tr><td>Money multiplier = money supply ÷ monetary base</td><td>4.4</td></tr>
+<tr><td>Rate of return = (revenue − cost) ÷ cost × 100</td><td>4.7</td></tr>
+<tr><td>National savings = private savings + budget balance</td><td>4.7</td></tr>
+<tr><td>Investment = national savings + net capital inflow</td><td>4.7</td></tr>
+</tbody></table></div>
+<h3>The three graphs</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Graph</th><th>Vertical axis</th><th>Curves</th><th>Use it for</th></tr></thead>
+<tbody>
+<tr><td><b>Money market</b></td><td>Nominal interest rate (i)</td><td>MD slopes down; MS vertical</td><td>OMOs, reserve requirement changes, MD shifters (limited reserves)</td></tr>
+<tr><td><b>Market for reserves</b></td><td>Policy rate</td><td>Reserve demand with flat sections; reserve supply vertical</td><td>IOR changes (ample reserves)</td></tr>
+<tr><td><b>Loanable funds</b></td><td>Real interest rate (r)</td><td>D<sub>LF</sub> slopes down; S<sub>LF</sub> slopes up</td><td>Deficits, crowding out, saving, capital inflows, investment tax credits</td></tr>
+</tbody></table></div>
+<h3>Policy at a glance</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>Situation</th><th>Policy</th><th>Limited-reserves tools</th><th>Ample-reserves tools</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Recessionary gap</td><td>Expansionary</td><td>Buy bonds; lower rr; lower discount rate</td><td>Lower IORB; QE</td><td>i ↓, I ↑, AD ↑, real GDP ↑, PL ↑</td></tr>
+<tr><td>Inflationary gap</td><td>Contractionary</td><td>Sell bonds; raise rr; raise discount rate</td><td>Raise IORB</td><td>i ↑, I ↓, AD ↓, real GDP ↓, PL ↓</td></tr>
+</tbody></table></div>
+<h3>Quick sorter: which curve moves?</h3>
+<div class="widget" id="sorter">
+  <p class="sub">For each event, pick the curve that shifts and the direction.</p>
+  <div id="sortList"></div>
+  <p>Score: <span class="score" id="sortScore">0 / 0</span></p>
+</div>
+</section>
+
+<!-- ================= Quiz ================= -->
+<section class="mod" id="quiz">
+<header><p class="modnum">Practice</p><h2>Practice test</h2></header>
+<p>Twenty-six AP-style multiple-choice questions covering the whole unit, written around the topics and examples in your reading. Pick an answer to see whether it’s right and why.</p>
+<div class="widget">
+  <p style="margin:0 0 4px">Score: <span class="score" id="quizScore">0 of 0 answered</span></p>
+  <div id="quizList"></div>
+  <div class="btns"><button class="btn" id="quizReset">Start over</button></div>
+</div>
+</section>
+
+<!-- ================= Glossary ================= -->
+<section class="mod" id="glossary" style="border-bottom:0">
+<header><p class="modnum">Reference</p><h2>Glossary of every Unit 4 term</h2></header>
+<label class="sr" for="glSearch">Search terms</label>
+<input class="search" id="glSearch" type="search" placeholder="Search, for example reserves or bond">
+<div class="gl" id="glList"></div>
+<p class="empty" id="glEmpty" hidden>No terms match that search. Try a shorter word.</p>
+</section>
+<footer>Built from your screen recordings of Krugman’s Macroeconomics for the AP® Course, 4th edition, Unit 4 (Modules 4.1–4.7, pages 192–259) and the Unit 4 review. The recording started partway into Module 4.1, so the opening definitions there come from the unit review and standard AP content. Your “Mark as studied” progress stays in this browser only.</footer>
+</main>
+</div>
+<script>
+(function(){
+let gid=0;
+const W=320,H=250,X=x=>45+x*24,Yc=p=>215-p*19;
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function sub(lab){return esc(lab).replace(/(\d)$/,'<tspan baseline-shift="sub" font-size="9">$1</tspan>')}
+const COL={d:'var(--ad)',s:'var(--sr)',v:'var(--lr)',k:'var(--ad)',h:'var(--ink3)'};
+// o: {yl, xl, title, aria, curves:[{t:'d'|'s'|'v'|'k'|'h', o:offset, lab, faint, col, (k: top,bot,a,b)}], pts:[{x,p,lab,plab,xlab}], arrows:[[x1,p1,x2,p2]], gap:[a,b]}
+function graph(o){
+  const id='g'+(++gid);let s='';
+  s+=`<svg viewBox="0 0 ${W} ${H}" width="100%" class="gsvg" role="img" aria-label="${esc(o.aria||o.title||'graph')}">`;
+  s+=`<defs><clipPath id="c${id}"><rect x="45" y="25" width="250" height="190"/></clipPath><marker id="a${id}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="var(--ink2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
+  if(o.gap){const a=Math.min(o.gap[0],o.gap[1]),b=Math.max(o.gap[0],o.gap[1]);s+=`<rect x="${X(a)}" y="25" width="${X(b)-X(a)}" height="190" fill="var(--hl)" opacity="0.55"/>`;}
+  s+=`<line x1="45" y1="20" x2="45" y2="215" stroke="var(--ink3)"/><line x1="45" y1="215" x2="${W-12}" y2="215" stroke="var(--ink3)"/>`;
+  s+=`<text x="12" y="16" font-size="12" fill="var(--ink2)">${esc(o.yl||'i')}</text><text x="${W-12}" y="246" font-size="12" fill="var(--ink2)" text-anchor="end">${esc(o.xl||'Quantity of money')}</text>`;
+  s+=`<g clip-path="url(#c${id})">`;
+  const curves=o.curves||[];
+  curves.forEach(c=>{const col=c.col||COL[c.t];const st=`stroke="${col}" stroke-width="2.4" fill="none" ${c.faint?'stroke-dasharray="5 4" opacity="0.5"':''}`;
+    if(c.t==='v')s+=`<line x1="${X(c.o)}" y1="25" x2="${X(c.o)}" y2="215" ${st}/>`;
+    else if(c.t==='h')s+=`<line x1="45" y1="${Yc(c.o)}" x2="${X(10.5)}" y2="${Yc(c.o)}" stroke="var(--ink3)" stroke-width="1.6" stroke-dasharray="6 4"/>`;
+    else if(c.t==='d')s+=`<line x1="${X(0.3)}" y1="${Yc(9.7+c.o)}" x2="${X(9.2)}" y2="${Yc(0.8+c.o)}" ${st}/>`;
+    else if(c.t==='s')s+=`<line x1="${X(0.5)}" y1="${Yc(0.5-c.o)}" x2="${X(9.3)}" y2="${Yc(9.3-c.o)}" ${st}/>`;
+    else if(c.t==='k')s+=`<polyline points="${X(0.2)},${Yc(c.top)} ${X(c.a)},${Yc(c.top)} ${X(c.b)},${Yc(c.bot)} ${X(10)},${Yc(c.bot)}" ${st}/>`;
+  });
+  (o.pts||[]).forEach(p=>{s+=`<line x1="45" y1="${Yc(p.p)}" x2="${X(p.x)}" y2="${Yc(p.p)}" stroke="var(--ink3)" stroke-dasharray="3 3"/><line x1="${X(p.x)}" y1="${Yc(p.p)}" x2="${X(p.x)}" y2="215" stroke="var(--ink3)" stroke-dasharray="3 3"/>`;});
+  s+=`</g>`;
+  (o.arrows||[]).forEach(a=>{s+=`<line x1="${X(a[0])}" y1="${Yc(a[1])}" x2="${X(a[2])}" y2="${Yc(a[3])}" stroke="var(--ink2)" stroke-width="1.6" marker-end="url(#a${id})"/>`;});
+  curves.forEach(c=>{if(!c.lab)return;const col=c.col||COL[c.t];let x,y,anc='start';
+    if(c.t==='v'){x=X(c.o);y=18;anc='middle';}
+    else if(c.t==='h'){x=X(9.4);y=Yc(c.o)-5;anc='end';}
+    else if(c.t==='d'){const pe=0.8+c.o;if(pe<0.5){x=X(10+c.o-0.5)+4;y=Yc(0.5)+2;}else{const p=Math.min(9.6,pe);x=X(9.2)+3;y=Yc(p)+4;}}
+    else if(c.t==='s'){const p=Math.max(0.6,Math.min(9.6,9.3-c.o));x=X(9.3)+3;y=Yc(p)+4;}
+    else if(c.t==='k'){x=X(10)-2;y=Yc(c.bot)-6;anc='end';}
+    s+=`<text x="${x}" y="${y}" font-size="12" font-weight="600" fill="${c.t==='h'?'var(--ink2)':col}" text-anchor="${anc}">${sub(c.lab)}</text>`;});
+  (o.pts||[]).forEach(p=>{s+=`<circle cx="${X(p.x)}" cy="${Yc(p.p)}" r="4" fill="var(--pt)"/>`;
+    if(p.lab)s+=`<text x="${X(p.x)+7}" y="${Yc(p.p)-7}" font-size="12" font-weight="600" fill="var(--ink)">${sub(p.lab)}</text>`;
+    if(p.plab)s+=`<text x="40" y="${Yc(p.p)+4}" font-size="11.5" fill="var(--ink2)" text-anchor="end">${sub(p.plab)}</text>`;
+    if(p.xlab)s+=`<text x="${X(p.x)}" y="230" font-size="11.5" fill="var(--ink2)" text-anchor="middle">${sub(p.xlab)}</text>`;});
+  s+=`</svg>`;
+  if(o.title)s+=`<p class="gt">${esc(o.title)}</p>`;
+  return s;
+}
+function put(id,o){const el=document.getElementById(id);if(el)el.innerHTML=graph(o);}
+const MM={yl:'i',xl:'Quantity of money'};
+const mm=(o)=>Object.assign({},MM,o);
+// MD: p = 10 + d - x ; MS vertical at x
+put('heroGraph',mm({aria:'Money market equilibrium',curves:[{t:'v',o:5,lab:'MS'},{t:'d',o:0,lab:'MD'}],pts:[{x:5,p:5,lab:'E',plab:'i1',xlab:'M1'}]}));
+put('figMD',mm({title:'Movement along MD',curves:[{t:'d',o:0,lab:'MD'}],pts:[{x:3,p:7,lab:'A',plab:'i1',xlab:'M1'},{x:6,p:4,lab:'B',plab:'i2',xlab:'M2'}],arrows:[[3.5,6.8,5.5,4.8]]}));
+put('figMDshift',mm({title:'MD shifts right or left',curves:[{t:'d',o:-2,lab:'MD3',faint:1},{t:'d',o:0,lab:'MD1'},{t:'d',o:2,lab:'MD2'}],arrows:[[5.3,5,6.7,5],[4.7,5,3.3,5]]}));
+put('figMME',mm({aria:'Money market equilibrium with disequilibrium points',curves:[{t:'v',o:5,lab:'MS'},{t:'d',o:0,lab:'MD'},{t:'h',o:7.5},{t:'h',o:2.5}],pts:[{x:5,p:5,lab:'E',plab:'iE'},{x:7.5,p:2.5,lab:'L',plab:'iL'},{x:2.5,p:7.5,lab:'H',plab:'iH'}]}));
+put('figMSdown',mm({title:'Money supply decreases: i rises',curves:[{t:'v',o:6,lab:'MS1',faint:1},{t:'v',o:4,lab:'MS2'},{t:'d',o:0,lab:'MD'}],pts:[{x:6,p:4,plab:'i1'},{x:4,p:6,plab:'i2'}],arrows:[[5.8,8,4.2,8]]}));
+put('figMDup',mm({title:'Money demand increases: i rises',curves:[{t:'v',o:5,lab:'MS'},{t:'d',o:-1,lab:'MD1',faint:1},{t:'d',o:1,lab:'MD2'}],pts:[{x:5,p:4,plab:'i1'},{x:5,p:6,plab:'i2'}],arrows:[[6.6,2.6,7.8,3.6]]}));
+put('figMSup',mm({title:'Money supply increases: i falls',curves:[{t:'v',o:4,lab:'MS1',faint:1},{t:'v',o:6,lab:'MS2'},{t:'d',o:0,lab:'MD'}],pts:[{x:4,p:6,plab:'i1'},{x:6,p:4,plab:'i2'}],arrows:[[4.2,8,5.8,8]]}));
+put('figMDdown',mm({title:'Money demand decreases: i falls',curves:[{t:'v',o:5,lab:'MS'},{t:'d',o:1,lab:'MD1',faint:1},{t:'d',o:-1,lab:'MD2'}],pts:[{x:5,p:6,plab:'i1'},{x:5,p:4,plab:'i2'}],arrows:[[7.8,3.6,6.6,2.6]]}));
+put('figOMObuy',mm({title:'Rate above target: buy bonds',curves:[{t:'v',o:4,lab:'MS1',faint:1},{t:'v',o:6,lab:'MS2'},{t:'d',o:0,lab:'MD'}],pts:[{x:4,p:6,plab:'i1'},{x:6,p:4,plab:'iT'}],arrows:[[4.2,8,5.8,8]]}));
+put('figOMOsell',mm({title:'Rate below target: sell bonds',curves:[{t:'v',o:6,lab:'MS1',faint:1},{t:'v',o:4,lab:'MS2'},{t:'d',o:0,lab:'MD'}],pts:[{x:6,p:4,plab:'i1'},{x:4,p:6,plab:'iT'}],arrows:[[5.8,8,4.2,8]]}));
+put('figExpMM',mm({title:'1. Buy bonds: MS ↑, i ↓',curves:[{t:'v',o:4,lab:'MS1',faint:1},{t:'v',o:6,lab:'MS2'},{t:'d',o:0,lab:'MD'}],pts:[{x:4,p:6,plab:'i1'},{x:6,p:4,plab:'i2'}],arrows:[[4.2,8,5.8,8]]}));
+const AS={yl:'PL',xl:'Real GDP'};const as=(o)=>Object.assign({},AS,o);
+// AD p=10+d-x ; SRAS p=x-s ; LRAS v at 5
+put('figExpAD',as({title:'2. I ↑, AD ↑, real GDP ↑',gap:[4,5],curves:[{t:'v',o:5,lab:'LRAS'},{t:'d',o:-2,lab:'AD1',faint:1},{t:'d',o:0,lab:'AD2'},{t:'s',o:0,lab:'SRAS'}],pts:[{x:4,p:4,plab:'PL1',xlab:'Y1'},{x:5,p:5,plab:'PL2',xlab:'Yp'}],arrows:[[6.4,1.6,7.4,2.6]]}));
+put('figConMM',mm({title:'1. Sell bonds: MS ↓, i ↑',curves:[{t:'v',o:6,lab:'MS1',faint:1},{t:'v',o:4,lab:'MS2'},{t:'d',o:0,lab:'MD'}],pts:[{x:6,p:4,plab:'i1'},{x:4,p:6,plab:'i2'}],arrows:[[5.8,8,4.2,8]]}));
+put('figConAD',as({title:'2. I ↓, AD ↓, PL ↓',gap:[5,6],curves:[{t:'v',o:5,lab:'LRAS'},{t:'d',o:2,lab:'AD1',faint:1},{t:'d',o:0,lab:'AD2'},{t:'s',o:0,lab:'SRAS'}],pts:[{x:6,p:6,plab:'PL1',xlab:'Y1'},{x:5,p:5,plab:'PL2',xlab:'Yp'}],arrows:[[7.4,4.6,6.4,3.6]]}));
+const RS={yl:'Policy rate',xl:'Quantity of reserves'};const rs=(o)=>Object.assign({},RS,o);
+put('figRes',rs({title:'Ample reserves: rate = IOR',curves:[{t:'k',top:8,bot:3,a:1.8,b:4.6,lab:'D'},{t:'v',o:7,lab:'S reserves',col:'var(--sr)'}],pts:[{x:7,p:3,plab:'IOR1'},{x:1,p:8,plab:'dr'}]}));
+put('figResIOR',rs({title:'Raise the IOR: policy rate rises',curves:[{t:'k',top:8,bot:3,a:1.8,b:4.6,faint:1},{t:'k',top:8,bot:5,a:1.8,b:3.8,lab:'D2'},{t:'v',o:7,lab:'S reserves',col:'var(--sr)'}],pts:[{x:7,p:3,plab:'IOR1'},{x:7,p:5,plab:'IOR2'}],arrows:[[8.6,3.3,8.6,4.7]]}));
+const LF={yl:'r',xl:'Quantity of loanable funds'};const lf=(o)=>Object.assign({},LF,o);
+// D p=10+d-x ; S p=x-s ; eq x=(10+d+s)/2
+put('figLF',lf({aria:'Loanable funds equilibrium',curves:[{t:'d',o:0,lab:'DLF'},{t:'s',o:0,lab:'SLF'}],pts:[{x:5,p:5,lab:'E',plab:'r*',xlab:'Q*'}]}));
+put('figLFD',lf({title:'Deficit ↑: DLF right, r ↑',curves:[{t:'d',o:0,lab:'DLF1',faint:1},{t:'d',o:2,lab:'DLF2'},{t:'s',o:0,lab:'SLF'}],pts:[{x:5,p:5,plab:'r1'},{x:6,p:6,plab:'r2'}],arrows:[[6.8,3.2,7.8,4.2]]}));
+put('figLFS',lf({title:'Capital inflows ↑: SLF right, r ↓',curves:[{t:'d',o:0,lab:'DLF'},{t:'s',o:0,lab:'SLF1',faint:1},{t:'s',o:2,lab:'SLF2'}],pts:[{x:5,p:5,plab:'r1'},{x:6,p:4,plab:'r2'}],arrows:[[3.6,3.6,4.8,2.8]]}));
+// Venn
+(function(){const el=document.getElementById('figVenn');if(!el)return;
+ el.innerHTML=`<svg viewBox="0 0 340 200" width="100%" class="gsvg" role="img" aria-label="Venn diagram: monetary base and money supply overlap in currency in circulation">
+ <circle cx="125" cy="100" r="80" fill="var(--ad)" fill-opacity="0.12" stroke="var(--ad)" stroke-width="2"/>
+ <circle cx="215" cy="100" r="80" fill="var(--sr)" fill-opacity="0.12" stroke="var(--sr)" stroke-width="2"/>
+ <text x="100" y="14" font-size="12.5" font-weight="600" fill="var(--ad)" text-anchor="middle">Monetary base</text>
+ <text x="240" y="14" font-size="12.5" font-weight="600" fill="var(--sr)" text-anchor="middle">Money supply</text>
+ <text x="88" y="98" font-size="12" fill="var(--ink)" text-anchor="middle">Bank</text><text x="88" y="113" font-size="12" fill="var(--ink)" text-anchor="middle">reserves</text>
+ <text x="170" y="98" font-size="12" fill="var(--ink)" text-anchor="middle">Currency in</text><text x="170" y="113" font-size="12" fill="var(--ink)" text-anchor="middle">circulation</text>
+ <text x="254" y="98" font-size="12" fill="var(--ink)" text-anchor="middle">Checkable</text><text x="254" y="113" font-size="12" fill="var(--ink)" text-anchor="middle">deposits</text></svg>`;})();
+
+// progress
+const MODS=['m41','m42','m43a','m43b','m44','m45','m46','m47'];
+const KEY='apmacro-u4-done';let done={};
+try{done=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){done={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(done));}catch(e){}}
+function renderProg(){let n=0;
+ MODS.forEach(m=>{const on=!!done[m];if(on)n++;const a=document.querySelector(`#tocList a[href="#${m}"]`);if(a)a.classList.toggle('done',on);
+  const b=document.querySelector(`[data-done="${m}"]`);if(b){b.setAttribute('aria-pressed',on);b.textContent=on?'✓ Studied':'Mark as studied';}});
+ document.getElementById('progTxt').textContent=`${n} of ${MODS.length} modules studied`;document.getElementById('progBar').style.width=(n/MODS.length*100)+'%';}
+document.querySelectorAll('[data-done]').forEach(b=>b.addEventListener('click',()=>{const m=b.dataset.done;done[m]=!done[m];save();renderProg();}));
+renderProg();
+const money=n=>'$'+Math.round(n).toLocaleString();
+
+// bond widget
+const bR=document.getElementById('bondR');
+function bond(){const r=+bR.value;document.getElementById('bondRo').textContent=r+'%';const p=50/(r/100);document.getElementById('bondP').textContent=money(p);
+ document.getElementById('bondS').innerHTML=r>5?`<b>Rates rose above 5%</b>, so new bonds pay more than yours. Buyers will only take your bond at a discount: its price falls below $1,000.`:r<5?`<b>Rates fell below 5%</b>, so your bond pays more than new ones. Buyers will pay a premium: its price rises above $1,000.`:`<b>The market rate equals your bond’s 5%</b>, so it sells at its face value of $1,000.`;}
+bR.addEventListener('input',bond);bond();
+
+// real rate widget
+const rR=document.getElementById('rReal'),rE=document.getElementById('rExp'),rA=document.getElementById('rAct');
+function rr(){const r=+rR.value,e=+rE.value,a=+rA.value,n=r+e,real=n-a;
+ document.getElementById('rRealO').textContent=r+'%';document.getElementById('rExpO').textContent=e+'%';document.getElementById('rActO').textContent=a+'%';
+ document.getElementById('rNom').textContent=n+'%';document.getElementById('rRes').textContent=(Math.round(real*10)/10)+'%';
+ let m=`Nominal = ${r}% wanted + ${e}% expected inflation = ${n}%. Actual real rate = ${n}% − ${a}% = ${Math.round(real*10)/10}%. `;
+ if(a>e)m+=`<b>Inflation was higher than expected, so the borrower gains</b> and the lender earns less than the ${r}% it wanted.`;
+ else if(a<e)m+=`<b>Inflation was lower than expected, so the lender gains</b> and the borrower pays more in real terms than planned.`;
+ else m+=`<b>Inflation matched expectations</b>, so both sides got the deal they planned.`;
+ if(real<0)m+=' The real rate is negative: the repayment buys less than the original loan did.';
+ document.getElementById('rMsg').innerHTML=m;}
+[rR,rE,rA].forEach(el=>el.addEventListener('input',rr));rr();
+
+// money multiplier widget
+const mR=document.getElementById('mmR'),mD=document.getElementById('mmD');
+function mmult(){const r=+mR.value/100,d=+mD.value,k=1/r,ex=d*(1-r);
+ document.getElementById('mmRo').textContent=Math.round(r*100)+'%';document.getElementById('mmDo').textContent=money(d);
+ let rows='<thead><tr><th>Round</th><th>New deposit</th><th>Kept as required reserves</th><th>Lent out (new money)</th></tr></thead><tbody>';let dep=d;
+ for(let i=1;i<=5;i++){rows+=`<tr><td>${i}</td><td>${money(dep)}</td><td>${money(dep*r)}</td><td>${money(dep*(1-r))}</td></tr>`;dep*=1-r;}
+ rows+=`<tr><td>…</td><td colspan="3">and so on, each round smaller than the last</td></tr></tbody>`;
+ document.getElementById('mmTable').innerHTML=rows;
+ document.getElementById('mmK').textContent=Math.round(k*100)/100;document.getElementById('mmE').textContent=money(ex);
+ document.getElementById('mmT').textContent=money(d*k);document.getElementById('mmM').textContent=money(ex*k);
+ document.getElementById('mmS').innerHTML=`Total deposits can grow to ${money(d)} × ${Math.round(k*100)/100} = <b>${money(d*k)}</b>. But ${money(d)} of that was cash already in circulation, so the money supply rises by at most ${money(ex)} × ${Math.round(k*100)/100} = <b>${money(ex*k)}</b>. If the Fed had instead added ${money(d)} of new reserves by buying bonds, the money supply could rise by the full ${money(d*k)}.`;}
+[mR,mD].forEach(el=>el.addEventListener('input',mmult));mmult();
+
+// money market lab
+let ms=5,md=0;const base={ms:5,md:0};
+const EV=[
+ ['Fed buys bonds',()=>{ms+=1.2},'An open market purchase adds reserves, so the money supply rises. MS shifts right and the interest rate falls.'],
+ ['Fed sells bonds',()=>{ms-=1.2},'An open market sale drains reserves, so the money supply falls. MS shifts left and the interest rate rises.'],
+ ['Reserve requirement cut',()=>{ms+=1.2},'Banks can lend more of each deposit, so the multiplier and the money supply rise. MS shifts right and i falls.'],
+ ['Price level rises',()=>{md+=1.2},'People need more money to buy the same goods, so MD shifts right and the interest rate rises.'],
+ ['Real GDP falls',()=>{md-=1.2},'Fewer purchases means less money needed, so MD shifts left and the interest rate falls.'],
+ ['Digital payments spread',()=>{md-=1.2},'Venmo-style apps cut the need to hold cash, so MD shifts left and the interest rate falls.']];
+const mlB=document.getElementById('mlBtns');let lastMsg='Start: the market is in equilibrium at point E.';
+function drawLab(){ms=Math.max(2,Math.min(8,ms));md=Math.max(-3,Math.min(3,md));const i=10+md-ms;
+ const cur=[{t:'v',o:ms,lab:'MS'},{t:'d',o:md,lab:'MD'}];
+ if(ms!==base.ms)cur.unshift({t:'v',o:base.ms,lab:'',faint:1});if(md!==base.md)cur.unshift({t:'d',o:base.md,faint:1});
+ const moved=(ms!==base.ms||md!==base.md);const pts=moved?[{x:5,p:5,plab:'i1'},{x:ms,p:i,lab:'E2',plab:'i2'}]:[{x:5,p:5,lab:'E',plab:'i1'}];
+ document.getElementById('mlGraph').innerHTML=graph(mm({aria:'Money market lab',curves:cur,pts}));
+ const ch=Math.round((i-5)*10)/10;
+ document.getElementById('mlS').innerHTML=`${lastMsg}<span class="mini">Interest rate compared with the start: ${ch===0?'unchanged':ch>0?'higher':'lower'}.</span>`;}
+EV.forEach(e=>{const b=document.createElement('button');b.className='btn';b.textContent=e[0];b.addEventListener('click',()=>{e[1]();lastMsg=e[2];drawLab();});mlB.appendChild(b);});
+const rb=document.createElement('button');rb.className='btn';rb.textContent='Reset';rb.addEventListener('click',()=>{ms=5;md=0;lastMsg='Start: the market is in equilibrium at point E.';drawLab();});mlB.appendChild(rb);
+drawLab();
+
+// sorter
+const SO=['MD right','MD left','MS right','MS left','D loanable funds right','D loanable funds left','S loanable funds right','S loanable funds left'];
+const SI=[
+ ['The Fed buys government bonds (limited reserves).',2,'An open market purchase raises reserves and the money supply: MS shifts right, and the nominal interest rate falls.'],
+ ['The aggregate price level rises.',0,'Money demand is proportional to the price level, so MD shifts right and i rises.'],
+ ['Real GDP falls during a recession.',1,'Fewer transactions means people want to hold less money: MD shifts left.'],
+ ['The central bank raises the reserve requirement.',3,'Banks must hold more of each deposit, so they lend less and the money supply shrinks: MS shifts left.'],
+ ['The government’s budget deficit grows.',4,'The government borrows more, raising the demand for loanable funds. The real rate rises (crowding out).'],
+ ['Congress passes an investment tax credit for solar panels.',4,'The credit raises the rate of return on investment projects, so firms want to borrow more.'],
+ ['Foreign investors decide the U.S. is a safer place for their savings.',6,'Capital inflows add to the supply of loanable funds, lowering the real interest rate.'],
+ ['Households feel richer from rising home prices and save less.',7,'Less private saving shifts the supply of loanable funds left, raising the real rate.'],
+ ['Mobile payment apps make it easy to pay without cash.',1,'Technology reduces the need to hold money, so MD shifts left.'],
+ ['Business owners become pessimistic about future sales.',5,'Fewer projects look profitable, so the demand for loanable funds shifts left.'],
+ ['The Fed sells Treasury bills to banks (limited reserves).',3,'An open market sale drains reserves, so MS shifts left and i rises.'],
+ ['The government moves from a deficit to a surplus.',5,'The government stops borrowing (and even supplies funds by paying down debt), so demand for loanable funds shifts left. (If your teacher treats public saving as supply, this is S right; either way r falls.)']];
+let sc=0,sa=0;const sl=document.getElementById('sortList');
+SI.forEach((it,i)=>{const d=document.createElement('div');d.className='q';
+ d.innerHTML=`<p class="prompt">${i+1}. ${esc(it[0])}</p><div class="sortopts">${SO.map((o,j)=>`<button class="opt" data-j="${j}">${o}</button>`).join('')}</div><p class="explain"></p>`;
+ d.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{const j=+b.dataset.j;sa++;if(j===it[1])sc++;
+  d.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(+x.dataset.j===it[1])x.classList.add('right');});if(j!==it[1])b.classList.add('wrong');
+  const e=d.querySelector('.explain');e.textContent=(j===it[1]?'Correct. ':'Not quite. ')+it[2];e.classList.add('show');
+  document.getElementById('sortScore').textContent=sc+' / '+sa;}));sl.appendChild(d);});
+
+// quiz
+const Q=[
+ ['The opportunity cost of holding cash is:',['Zero, since cash is perfectly liquid','The interest that could have been earned on an interest-bearing asset','The inflation rate minus the interest rate','The fee banks charge for withdrawals'],1,'Cash earns no interest, so holding it means giving up the interest you could have earned elsewhere.'],
+ ['If interest rates in the economy rise, the price of previously issued bonds will:',['Rise','Fall','Stay the same','Rise, then fall'],1,'Bond prices and interest rates move in opposite directions. Old bonds paying lower rates must sell at a discount.'],
+ ['Which is a task of an economy’s financial system?',['Increasing transaction costs','Maximizing risk','Providing liquidity','Decreasing diversification'],2,'The three tasks are reducing transaction costs, reducing risk (through diversification), and providing liquidity.'],
+ ['Compared with a bond issued by the same company, a share of stock typically offers:',['Lower return and lower risk','Higher return and higher risk','Higher return and lower risk','The same return and risk'],1,'“A bond is a promise, a stock is a hope.” Bondholders are paid first, so stocks are riskier but usually earn more.'],
+ ['A loan has a nominal interest rate of 9% and inflation turns out to be 4%. The real interest rate is:',['13%','5%','4%','2.25%'],1,'Real = nominal − inflation = 9% − 4% = 5%.'],
+ ['Lenders want a 3% real return and expect 2% inflation. They should charge a nominal rate of:',['1%','3%','5%','6%'],2,'Nominal = expected real + expected inflation = 3% + 2% = 5%.'],
+ ['If actual inflation is higher than expected, then:',['Lenders gain at the expense of borrowers','Borrowers gain at the expense of lenders','Neither gains','Both gain'],1,'Borrowers repay with dollars that buy less than expected, so the real rate is lower than planned.'],
+ ['Which statement about interest rates is correct?',['Nominal rates set by commercial lenders are often negative','Real rates can be negative if inflation exceeds the nominal rate','Real rates are always higher than nominal rates','Real and nominal rates are equal when inflation is high'],1,'A real rate is negative when actual inflation is greater than the nominal rate. Lenders won’t set negative nominal rates.'],
+ ['When you compare prices on two laptops, money is serving as a:',['Medium of exchange','Store of value','Unit of account','Source of liquidity'],2,'Using money to measure and compare value is its role as a unit of account.'],
+ ['Keeping the $20 you receive each birthday in a drawer for 10 years uses money as a:',['Medium of exchange','Store of value','Unit of account','Commodity money'],1,'Holding purchasing power over time is the store-of-value function.'],
+ ['The U.S. dollar today is:',['Commodity money','Commodity-backed money','Fiat money','Backed by gold and silver'],2,'Its value comes only from its official status as a means of payment.'],
+ ['Compared with M1, M2 is:',['Smaller','More liquid','Less liquid','More narrowly defined'],2,'M2 includes all of M1 plus near-moneys, so it is larger but less liquid.'],
+ ['Which is part of M1 but NOT part of the monetary base?',['Currency in circulation','Bank reserves','Checkable deposits','Coins in bank vaults'],2,'Checkable deposits are money but not part of the base. The base is currency in circulation plus bank reserves.'],
+ ['The Federal Open Market Committee consists of:',['The 12 regional bank presidents','The Board of Governors plus 5 regional bank presidents','The Secretary of the Treasury and the Fed chair','Members of Congress'],1,'The 7 governors plus 5 regional presidents, with the New York Fed president always included.'],
+ ['A central bank does all of the following EXCEPT:',['Supervise and regulate banks','Conduct monetary policy','Act as lender of last resort','Set income tax rates'],3,'Taxes are fiscal policy, set by Congress and the president.'],
+ ['When the Fed buys $100 million of Treasury bills from banks, the monetary base:',['Falls by $100 million','Rises by $100 million','Rises by $1 billion immediately','Does not change'],1,'The Fed pays by crediting banks’ reserve accounts, so reserves and the base rise by $100 million.'],
+ ['A bank has deposits of $200,000, reserves of $50,000, and the required reserve ratio is 10%. Its excess reserves are:',['$20,000','$30,000','$45,000','$50,000'],1,'Required = $200,000 × 0.10 = $20,000. Excess = $50,000 − $20,000 = $30,000.'],
+ ['If the reserve requirement is 25%, the simple money multiplier is:',['0.25','2.5','4','25'],2,'Multiplier = 1 ÷ 0.25 = 4.'],
+ ['With a 10% reserve requirement, someone deposits $1,000 in cash they had at home. The maximum increase in the money supply is:',['$900','$1,000','$9,000','$10,000'],2,'Excess reserves = $900. $900 × 10 = $9,000. (Deposits can rise $10,000, but $1,000 of that was already money as cash.)'],
+ ['The actual money multiplier is usually smaller than 1/rr because:',['The Fed prints too much money','People hold cash and banks keep excess reserves','Interest rates are too high','Deposit insurance limits lending'],1,'Cash held by the public and excess reserves held by banks leak out of the lending process.'],
+ ['On the money market graph, an increase in real GDP will:',['Shift MS right and lower i','Shift MD right and raise i','Shift MD left and lower i','Have no effect'],1,'More purchases mean more money demanded at every rate, so MD shifts right and the nominal rate rises.'],
+ ['If the nominal interest rate is below equilibrium in the money market:',['There is a surplus of money and i falls','There is a shortage of money and i rises','The Fed must sell bonds','MD shifts left'],1,'People want more money than is supplied. They sell interest-bearing assets, pushing the interest rate up.'],
+ ['In an economy with limited reserves, which policy best fights a recession?',['Selling government bonds','Raising the reserve requirement','Buying government bonds','Raising the discount rate'],2,'Buying bonds raises reserves and the money supply, lowering interest rates and raising AD.'],
+ ['Which correctly shows the effect of an increase in the interest on reserves (IOR)?',['i ↓ → I ↑ → AD ↑ → real GDP ↑','i ↑ → I ↓ → AD ↓ → real GDP ↓','i ↑ → I ↑ → AD ↑ → real GDP ↑','i ↓ → I ↓ → AD ↓ → real GDP ↓'],1,'A higher IOR raises the policy rate, which lowers investment and AD, so real GDP falls.'],
+ ['In an economy with ample reserves, a central bank responding to a recession would most likely:',['Raise the interest paid on reserves','Lower the interest paid on reserves or use quantitative easing','Raise the reserve requirement','Cut taxes'],1,'Lowering the IOR (or QE) lowers interest rates and is expansionary. Cutting taxes is fiscal policy.'],
+ ['An increase in the government budget deficit will most likely:',['Lower the real interest rate and raise private investment','Raise the real interest rate and reduce private investment','Shift the supply of loanable funds right','Have no effect on interest rates'],1,'More government borrowing raises demand for loanable funds, pushing up the real rate and crowding out private investment.']];
+const ql=document.getElementById('quizList');
+function buildQuiz(){ql.innerHTML='';let c=0,a=0;const upd=()=>document.getElementById('quizScore').textContent=`${c} correct, ${a} of ${Q.length} answered`;
+ Q.forEach((q,i)=>{const d=document.createElement('div');d.className='q';
+  d.innerHTML=`<p class="prompt">${i+1}. ${esc(q[0])}</p><div class="opts">${q[1].map((o,j)=>`<button class="opt" data-j="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><p class="explain"></p>`;
+  d.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{const j=+b.dataset.j;a++;if(j===q[2])c++;
+   d.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(+x.dataset.j===q[2])x.classList.add('right');});if(j!==q[2])b.classList.add('wrong');
+   const e=d.querySelector('.explain');e.textContent=(j===q[2]?'Correct. ':'Not quite. ')+q[3];e.classList.add('show');upd();}));
+  ql.appendChild(d);});upd();}
+document.getElementById('quizReset').addEventListener('click',buildQuiz);buildQuiz();
+
+// glossary
+const G=[
+['Wealth','4.1','The value of a household’s assets minus its liabilities.'],
+['Financial asset','4.1','A paper claim that entitles the buyer to future income from the seller, such as a stock, bond, loan, or deposit.'],
+['Physical asset','4.1','A tangible object the owner can use or sell, like a house or machinery.'],
+['Liability','4.1','A requirement to pay money in the future.'],
+['Transaction costs','4.1','The expenses of negotiating and executing a deal.'],
+['Financial risk','4.1','Uncertainty about future outcomes that involve financial losses or gains.'],
+['Diversification','4.1','Investing in several assets with unrelated, or independent, risks to lower total risk.'],
+['Liquid','4.1','Easily converted into cash without much loss of value.'],
+['Illiquid','4.1','Not easily converted into cash without loss of value, like a business or a home.'],
+['Loan','4.1','A lending agreement between one lender and one borrower.'],
+['Bond','4.1','An interest-bearing IOU issued by a borrower that pays fixed interest and repays principal on a set date. Its price moves opposite to interest rates.'],
+['Default','4.1','The risk that a bond issuer fails to make the promised payments.'],
+['Stock','4.1','A share in the ownership of a company; a form of equity.'],
+['Rate of return','4.1','The net gain or loss on an asset as a percentage of its cost.'],
+['Financial intermediary','4.1','An institution that turns funds from many individuals into financial assets, such as a mutual fund or a bank.'],
+['Mutual fund','4.1','A financial intermediary that holds a portfolio of stocks and sells shares of it to investors.'],
+['Bank deposit','4.1','A claim on a bank that obliges it to give the depositor cash. A demand deposit must be paid on demand.'],
+['Nominal interest rate','4.2','The interest rate actually paid on a loan, unadjusted for inflation.'],
+['Real interest rate','4.2','The nominal rate minus the inflation rate; the true cost of borrowing and reward for lending.'],
+['Expected real interest rate','4.2','The nominal rate minus the expected inflation rate.'],
+['Money','4.3A','Any asset that can easily be used to purchase goods and services.'],
+['Currency in circulation','4.3A','Cash held by the public.'],
+['Checkable bank deposits','4.3A','Bank accounts that can be spent with checks, debit cards, or payment apps.'],
+['Money supply','4.3A','The total value of financial assets in the economy that are considered money.'],
+['Medium of exchange','4.3A','An asset used to trade for goods and services rather than consumed.'],
+['Store of value','4.3A','A means of holding purchasing power over time.'],
+['Unit of account','4.3A','The commonly accepted measure used to set prices and make calculations.'],
+['Commodity money','4.3A','A medium of exchange with value in other uses, like gold or silver.'],
+['Commodity-backed money','4.3A','Money with no intrinsic value that can be exchanged for valuable goods on demand.'],
+['Fiat money','4.3A','Money whose value comes only from its official status as a means of exchange, like today’s dollar.'],
+['Monetary aggregate','4.3A','An overall measure of the money supply, such as M1 or M2.'],
+['Monetary base (M0, MB)','4.3A','Currency in circulation plus bank reserves.'],
+['M1','4.3A','Currency in circulation, checkable deposits, and other liquid deposits. The usual meaning of “the money supply.”'],
+['M2','4.3A','M1 plus near-moneys.'],
+['Near-moneys','4.3A','Assets that can’t be spent directly but can easily be turned into cash or checkable deposits, like savings accounts and small CDs.'],
+['Central bank','4.3B','A government institution that issues currency, regulates banks, controls the monetary base, and conducts monetary policy.'],
+['Federal Reserve (the Fed)','4.3B','The U.S. central bank: the Board of Governors plus 12 regional Federal Reserve Banks.'],
+['Federal Open Market Committee (FOMC)','4.3B','The Board of Governors plus five regional bank presidents; it sets U.S. monetary policy.'],
+['Bank run','4.3B','Many depositors withdrawing at once out of fear that the bank will fail.'],
+['T-account','4.3B','A table showing assets on the left and liabilities on the right.'],
+['Open market operations (OMOs)','4.3B','Central bank purchases or sales of government bonds. Buying raises reserves and the money supply; selling lowers them.'],
+['Fractional reserve banking system','4.4','A system where banks hold only a fraction of deposits as reserves and lend the rest.'],
+['Bank reserves','4.4','Currency in bank vaults plus banks’ deposits at the central bank.'],
+['Reserve ratio','4.4','The fraction of deposits a bank holds as reserves.'],
+['Reserve requirements','4.4','Rules set by the central bank for the minimum reserve ratio.'],
+['Required reserves','4.4','The reserves a bank must hold: deposits × the required reserve ratio.'],
+['Excess reserves','4.4','Reserves above the required amount; what a bank can lend.'],
+['Bank capital','4.4','A bank’s assets minus its liabilities; also called equity.'],
+['Deposit insurance','4.4','A guarantee (from the FDIC, up to $250,000) that depositors are paid even if their bank fails.'],
+['Discount window','4.4','The channel through which banks borrow from the central bank.'],
+['Money multiplier','4.4','The ratio of the money supply to the monetary base. The simple money multiplier is 1/rr.'],
+['Money demand curve (MD)','4.5','Shows the negative relationship between the nominal interest rate and the quantity of money demanded.'],
+['Money supply curve (MS)','4.5','A vertical line at the quantity of money chosen by the central bank.'],
+['Money market','4.5','Where money demand and money supply determine the equilibrium nominal interest rate.'],
+['Monetary policy','4.6','Central bank actions that change interest rates to influence the economy.'],
+['Inflation targeting','4.6','Setting monetary policy to hit an explicit target rate of inflation.'],
+['Expansionary monetary policy','4.6','Lowering interest rates to shift AD right and close a recessionary gap.'],
+['Contractionary monetary policy','4.6','Raising interest rates to shift AD left and close an inflationary gap.'],
+['Overnight interbank lending rate','4.6','The rate banks charge each other for overnight loans of reserves; in the U.S., the federal funds rate.'],
+['Policy rate','4.6','The central bank’s target for the overnight interbank lending rate.'],
+['Federal funds rate','4.6','The interest rate U.S. banks charge each other for overnight loans; the Fed’s target rate.'],
+['Discount rate','4.6','The interest rate the central bank charges on loans to banks.'],
+['Ample reserves','4.6','A regime where banks hold so many reserves that changes in their quantity don’t move the policy rate; the central bank uses administered rates instead.'],
+['Limited reserves','4.6','A regime where small changes in reserves shift the money supply and change interest rates.'],
+['Quantitative easing (QE)','4.6','Large-scale central bank purchases of longer-term bonds and other assets to inject money and lower rates.'],
+['Interest on reserve balances (IORB)','4.6','The interest a central bank pays banks on their reserves. The Fed’s main tool with ample reserves.'],
+['Administered rates','4.6','Rates the Fed sets directly (the IORB and the overnight reverse repurchase agreement rate) to keep the fed funds rate in its target range.'],
+['Arbitrage','4.6','Buying low and selling high; it keeps the fed funds rate from falling much below the IOR.'],
+['Zero bound','4.6','The limit that nominal interest rates can’t fall much below zero.'],
+['Monetary policy lags','4.6','Delays in recognizing problems and in policy taking effect. Shorter than fiscal policy lags.'],
+['Savings–investment spending identity','4.7','For the economy as a whole, savings always equal investment spending.'],
+['Budget surplus','4.7','Tax revenue greater than government spending; government saving.'],
+['Budget deficit','4.7','Government spending greater than tax revenue; government dissaving.'],
+['Budget balance','4.7','Tax revenue minus government spending. Positive is a surplus, negative a deficit.'],
+['Private savings','4.7','Disposable income minus consumer spending.'],
+['National savings','4.7','Private savings plus the budget balance.'],
+['Net capital inflow','4.7','Foreign funds flowing in minus domestic funds flowing out.'],
+['Loanable funds market','4.7','A hypothetical market that matches savers with borrowers and sets the real interest rate.'],
+['Investment tax credit','4.7','A tax break for firms that invest; it shifts demand for loanable funds right.'],
+['Crowding out','4.7','The reduction in private investment caused by government deficits raising the real interest rate.']];
+const gl=document.getElementById('glList');
+function glr(q){q=(q||'').trim().toLowerCase();let n=0;gl.innerHTML='';
+ G.forEach(g=>{if(q&&!(g[0]+' '+g[2]).toLowerCase().includes(q))return;n++;const d=document.createElement('div');d.className='g';
+  d.innerHTML=`<b>${esc(g[0])}</b><span class="m">Module ${g[1]}</span><p>${esc(g[2])}</p>`;gl.appendChild(d);});
+ document.getElementById('glEmpty').hidden=n>0;}
+document.getElementById('glSearch').addEventListener('input',e=>glr(e.target.value));glr('');
+})();
+</script>
+</body>
+</html>
